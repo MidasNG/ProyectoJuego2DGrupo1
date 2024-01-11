@@ -14,14 +14,15 @@ public class TruckBehaviour : MonoBehaviour
     private void Start()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
+        
         StartCoroutine("MovePointA");
     }
 
     void Update()
     {
         //No dejar pasar a los camiones
-        if (approveable && Input.GetButtonDown("Left") && transform.position.x == -6) StartCoroutine(Vanish());
-        if (approveable && Input.GetButtonDown("Right")&& transform.position.x == 6) StartCoroutine(Vanish());
+        if (approveable && Input.GetButtonDown("Left") && Mathf.Approximately(transform.position.x, -4.2f)) StartCoroutine(Vanish());
+        if (approveable && Input.GetButtonDown("Right")&& Mathf.Approximately(transform.position.x, 4.3f)) StartCoroutine(Vanish());
     }
 
     //Moverse desde fuera hacia dentro de la pantalla
@@ -69,5 +70,11 @@ public class TruckBehaviour : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         Destroy(gameObject);
+    }
+
+    //Asociar 'game' desde el spawner
+    public void SetGame(GameObject game)
+    {
+        this.game = game.GetComponent<TruckGameController>();
     }
 }
