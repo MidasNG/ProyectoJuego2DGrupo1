@@ -8,6 +8,17 @@ public class ArmMovement : MonoBehaviour
     public float limiteIzquierdo = -1.0f; // Límite izquierdo
     public float limiteDerecho = 1.0f; // Límite derecho
 
+    public Sprite manoCerradaSprite;
+    public Sprite manoAbiertaSprite;
+
+    private SpriteRenderer spriteRenderer;
+    private bool puedePulsarSpace = true;
+
+    void Start()
+    {
+        spriteRenderer = GetComponent<SpriteRenderer>();
+    }
+
     void Update()
     {
         // Obtener la entrada de teclado para mover el brazo
@@ -25,5 +36,30 @@ public class ArmMovement : MonoBehaviour
 
         // Actualizar la posición del brazo
         transform.position = new Vector3(nuevaPosicionX, posicionActual.y, posicionActual.z);
+
+        // Verifica si se ha presionado la tecla Space y puedePulsarSpace es true
+        if (Input.GetKeyDown(KeyCode.Space) && puedePulsarSpace)
+        {
+            // Cambia el sprite a la mano abierta
+            spriteRenderer.sprite = manoAbiertaSprite;
+
+            // Inicia la corrutina para cerrar la mano después de un tiempo
+            StartCoroutine(CerrarManoDespuesDeTiempo(0.5f));
+        }
+    }
+
+    IEnumerator CerrarManoDespuesDeTiempo(float tiempo)
+    {
+        // Indica que no se puede pulsar Space durante un segundo
+        puedePulsarSpace = false;
+
+        // Espera el tiempo especificado
+        yield return new WaitForSeconds(tiempo);
+
+        // Cambia el sprite de nuevo a la mano cerrada
+        spriteRenderer.sprite = manoCerradaSprite;
+
+        // Habilita la posibilidad de volver a pulsar Space
+        puedePulsarSpace = true;
     }
 }

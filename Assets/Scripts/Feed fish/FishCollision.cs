@@ -4,12 +4,20 @@ using UnityEngine;
 
 public class FishCollision : MonoBehaviour
 {
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        // Verificar si colisiona con el pez (u otro objeto que desees)
-        if (other.gameObject.GetComponent<FoodCollision>() != null)
+        // Verificar si colisiona con la comida
+        if (other.gameObject.CompareTag("Comida"))
         {
             // Destruir tanto la comida como el objeto del pez
+            Destroy(gameObject);
+            Destroy(other.gameObject);
+        }
+
+        // Verificar si colisiona con otro pez
+        if (other.gameObject.CompareTag("Pez"))
+        {
+            // Destruir ambos peces
             Destroy(gameObject);
             Destroy(other.gameObject);
         }
