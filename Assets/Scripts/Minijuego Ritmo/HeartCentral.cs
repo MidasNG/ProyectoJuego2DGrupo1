@@ -10,7 +10,6 @@ public class HeartCentral : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.position = new Vector3(target.position.x, -4, 0);
