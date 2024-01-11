@@ -13,13 +13,5 @@ public class FishCollision : MonoBehaviour
             Destroy(gameObject);
             Destroy(other.gameObject);
         }
-
-        // Verificar si colisiona con otro pez
-        if (other.gameObject.CompareTag("Pez"))
-        {
-            // Destruir ambos peces
-            Destroy(gameObject);
-            Destroy(other.gameObject);
-        }
     }
 }

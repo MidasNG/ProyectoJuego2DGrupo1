@@ -169,7 +169,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   comidaPrefab: {fileID: 8661905877846624866, guid: b1025b760c3b28d44945079e614ec4b1, type: 3}
   cantidadMaxima: 5
-  tiempoEsperaEntreGeneraciones: 0.25
+  tiempoEsperaEntreGeneraciones: 0.5
   tiempoVidaComida: 5
 --- !u!1 &419027940
 GameObject:
@@ -326,8 +326,8 @@ MonoBehaviour:
   alturaMinima: -5
   moverHaciaDerecha: 1
   intervaloGeneracion: 2
-  tamanoMinimo: 0.5
-  tamanoMaximo: 2
+  tamanoMinimo: 2
+  tamanoMaximo: 5
 --- !u!4 &755265480
 Transform:
   m_ObjectHideFlags: 0
@@ -594,8 +594,8 @@ MonoBehaviour:
   alturaMinima: -5
   moverHaciaDerecha: 0
   intervaloGeneracion: 2
-  tamanoMinimo: 0.5
-  tamanoMaximo: 2
+  tamanoMinimo: 2
+  tamanoMaximo: 5
 --- !u!4 &1955548063
 Transform:
   m_ObjectHideFlags: 0
