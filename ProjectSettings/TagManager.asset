@@ -6,19 +6,24 @@ TagManager:
   tags:
   - ground
   - background
+<<<<<<< Updated upstream
   - palanca
   - Comida
   - Pez
+=======
+  - RhythmDestroyer
+  - RhythmHeart
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Protagonist
   - Water
   - UI
-  - 
-  - 
-  - 
+  - RhythmGround
+  - RhythmHeart
+  - RhythmDestroyer
   - 
   - 
   - 
