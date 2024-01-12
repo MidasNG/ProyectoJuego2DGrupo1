@@ -5,33 +5,43 @@ using UnityEngine;
 public class MovSubmarino : MonoBehaviour
 {
     private SpriteRenderer sprite;
-    private Animator animator;
 
-    public float velocidad = 5f;
+    public float velocidad = 3;
+    public float value = 6;
 
-    // Start is called before the first frame update
-    void Awake()
-    {
-        
-    }
+//    void Update()
+//    {
+//        Vector2 inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
 
-    // Update is called once per frame
-    void Update()
-    {
-        float movHorizontal = Input.GetAxis("Horizontal");
-        transform.Translate(Vector2.down * movHorizontal * velocidad * Time.deltaTime);
+//        if (inputVector.magnitude > 1)
+//        {
+//            inputVector.Normalize();
+//        }
 
-        float movVertical = Input.GetAxis("Vertical");
-        transform.Translate(Vector2.right * movVertical * velocidad * Time.deltaTime);
+//        Vector2 movementVector = inputVector * Time.deltaTime * velocidad;
+
+//        transform.position = new Vector2(Mathf.Clamp(transform.position.x + movementVector.x, -11, 41), (Mathf.Clamp(transform.position.y + movementVector.y, 1.5f, -73)));
+
+//    }
+
+//}
+
+        void Update()
+        {
+            float movHorizontal = Input.GetAxis("Horizontal");
+            transform.Translate(Vector2.down * movHorizontal * velocidad * Time.deltaTime);
+
+            float movVertical = Input.GetAxis("Vertical");
+            transform.Translate(Vector2.right * movVertical * velocidad * Time.deltaTime);
 
 
-        //if (movHorizontal > 0)
-        //{
-        //    sprite.flipX = false;
-        //}
-        //else if (movHorizontal < 0)
-        //{
-        //    sprite.flipX = true;
-        //}
-    }
+            //if (movHorizontal > 0)
+            //{
+            //    sprite.flipX = false;
+            //}
+            //else if (movHorizontal < 0)
+            //{
+            //    sprite.flipX = true;
+            //}
+        }
 }

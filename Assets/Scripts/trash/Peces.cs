@@ -2,26 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Basuras : MonoBehaviour
+public class Peces : MonoBehaviour
 {
-    private AudioSource clip;
+    private AudioSource clipPez;
     private SpriteRenderer render;
-    private CircleCollider2D colisionador;
+    private CapsuleCollider2D colisionador;
 
     void Start()
     {
-        clip = GetComponent<AudioSource>();
+        clipPez = GetComponent<AudioSource>();
         render = GetComponent<SpriteRenderer>();
-        colisionador = GetComponent<CircleCollider2D>();
+        colisionador = GetComponent<CapsuleCollider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            //ScriptContador.instance.CogerBasuras();
-
-            clip.Play();
+            clipPez.Play();
             render.enabled = false;
             colisionador.enabled = false;
 
