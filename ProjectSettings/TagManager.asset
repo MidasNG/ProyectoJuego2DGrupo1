@@ -3,18 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Comida
-  - Pez
-  - ground
-  - background
-  - palanca
-<<<<<<< HEAD
-  - Puntuacion
-=======
-  - RhythmDestroyer
-  - RhythmHeart
->>>>>>> 3b3a62af0af76fe3a9b39efca7c7f1960ab63310
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -51,10 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Sky Feed Fish
-    uniqueID: 48678459
-    locked: 0
-  - name: Water Feed Fish
-    uniqueID: 47547073
     locked: 0

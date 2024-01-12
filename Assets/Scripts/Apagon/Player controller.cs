@@ -30,8 +30,11 @@ public class Playercontroller : MonoBehaviour
             rb.AddForce(new Vector2(0, speedjump), ForceMode2D.Impulse);
             
             valuejumps--;
+
         }
-        
+
+        controller.SetBool("jump", Input.GetAxisRaw("Jump") != 0);
+       
 
         if (ground)
         {
@@ -51,6 +54,9 @@ public class Playercontroller : MonoBehaviour
         {
             giro.flipX = true;
         }
+
+        transform.position = new Vector2(Mathf.Clamp((transform.position.x), -8.88f, 8.88f), Mathf.Clamp((transform.position.y ), -5.41f, 4.59f));
+
     }
 
 

@@ -8,12 +8,14 @@ public class Encender : MonoBehaviour
 
     public GameObject dark;
     public GameObject dark2;
-    public GameObject nuclear;
     public GameObject verde;
+    public GameObject verdefondo;
     public Animator palanca;
     public Animator lightup;
     public GameObject night;
-
+    private AudioSource audiopalanca;
+    public AudioSource audiovictory;
+    public AudioSource audiovictory2;
 
 
 
@@ -21,10 +23,11 @@ public class Encender : MonoBehaviour
     void Start()
     {
         dark.SetActive(true);
-        nuclear.SetActive(true);
         dark2.SetActive(false);
         verde.SetActive(false);
+        verdefondo.SetActive(false);
         night.SetActive(false);
+        audiopalanca=GetComponent<AudioSource>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,12 +35,15 @@ public class Encender : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             dark.SetActive(false);
-            nuclear.SetActive(false);
             dark2.SetActive(true);
             verde.SetActive(true);
+            verdefondo.SetActive(true);
             night.SetActive(true);
             palanca.SetTrigger("activar");
             lightup.SetTrigger("encender");
+            audiopalanca.Play();
+            audiovictory.Play();
+            audiovictory2.Play();
         }
     }
 }
