@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Playercontroller : MonoBehaviour
 {
+
     private Animator controller;
     private Rigidbody2D rb;
     private SpriteRenderer giro;
@@ -13,13 +14,14 @@ public class Playercontroller : MonoBehaviour
     private int jumps = 1;
     private int valuejumps;
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         controller = GetComponent<Animator>();
         giro = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
     }
+
 
     void Update()
     {
@@ -49,24 +51,26 @@ public class Playercontroller : MonoBehaviour
         {
             giro.flipX = true;
         }
-
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
         if (collision.CompareTag("ground"))
         {
             ground = true;
         }
-       
+      
     }
+
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (!collision.CompareTag("ground"))
+        
+        if (collision.CompareTag("ground"))
         {
             ground = false;
         }
+
     }
 }
