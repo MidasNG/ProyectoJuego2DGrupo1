@@ -9,8 +9,12 @@ TagManager:
   - ground
   - background
   - palanca
+<<<<<<< HEAD
+  - Puntuacion
+=======
   - RhythmDestroyer
   - RhythmHeart
+>>>>>>> 3b3a62af0af76fe3a9b39efca7c7f1960ab63310
   layers:
   - Default
   - TransparentFX

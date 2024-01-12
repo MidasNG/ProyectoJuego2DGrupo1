@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 7425092339489024485}
   - component: {fileID: 2376852239693733689}
+  - component: {fileID: 3074929996002663503}
   m_Layer: 0
   m_Name: "Puntuaci\xF3n"
-  m_TagString: Untagged
+  m_TagString: Puntuacion
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 2d65c0e4e8a26e14a92415756e0e01b4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -84,3 +85,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3074929996002663503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3634600158793203260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 682ebe21c2b816a4fbcde33630593ea8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempoVida: 0.3
