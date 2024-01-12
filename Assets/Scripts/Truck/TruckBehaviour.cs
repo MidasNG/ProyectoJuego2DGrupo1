@@ -1,15 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Serialization;
+using Unity.Properties;
 using UnityEngine;
 
 public class TruckBehaviour : MonoBehaviour
 {
     [SerializeField] private AnimationCurve movementCurve, vanishCurve;
+    [SerializeField] private TruckGameController game;
     private SpriteRenderer spriteRenderer;
     private float pointA = 0, t, vanishT = 0, pointB = 10, speed = 4;
     private bool approveable = false;
-    [SerializeField] private TruckGameController game;
+    private Notification miss, correct, incorrect;
 
     private void Start()
     {
@@ -46,14 +48,14 @@ public class TruckBehaviour : MonoBehaviour
     private IEnumerator MovePointB()
     {
         t = 0;
-        while (transform.position.y < pointB)
+        while (!Mathf.Approximately(transform.position.y, pointB))
         {
             t = Mathf.Clamp(t + Time.deltaTime * speed, 0, 1);
             transform.position = new Vector2(transform.position.x, Mathf.Lerp(pointA, pointB, movementCurve.Evaluate(t)));
             if (transform.position.y >= 5) approveable = false;
             yield return new WaitForEndOfFrame();
         }
-        Vanish();
+        VanishMiss();
     }
 
     //Desaparecer
@@ -61,7 +63,16 @@ public class TruckBehaviour : MonoBehaviour
     {
         StopCoroutine(MovePointA());
         StopCoroutine(MovePointB());
-        if (spriteRenderer.color.g == 1) game.SubtractScore(); else game.AddScore();
+        if (spriteRenderer.color.g == 1 && !Mathf.Approximately(transform.position.y, pointB))
+        {
+            game.SubtractScore();
+            incorrect.TriggerNotif();
+        }
+        else
+        {
+            game.AddScore();
+            correct.TriggerNotif();
+        }
         vanishT = 0;
         while (spriteRenderer.color.a > 0)
         {
@@ -72,9 +83,22 @@ public class TruckBehaviour : MonoBehaviour
         Destroy(gameObject);
     }
 
-    //Asociar 'game' desde el spawner
-    public void SetGame(GameObject game)
+    private void VanishMiss()
     {
-        this.game = game.GetComponent<TruckGameController>();
+        if (spriteRenderer.color.r == 1)
+        {
+            game.SubtractScore();
+            miss.TriggerNotif();
+            Destroy(gameObject);
+        }
+    }
+
+    //Asociar los elementos necesarios desde el spawner
+    public void Setup(TruckGameController game, Notification miss, Notification correct, Notification incorrect)
+    {
+        this.game = game;
+        this.miss = miss;
+        this.correct = correct;
+        this.incorrect = incorrect;
     }
 }
