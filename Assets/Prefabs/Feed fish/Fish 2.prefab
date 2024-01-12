@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -5078434254540000601}
   - component: {fileID: 9204609084762702422}
   - component: {fileID: 5799608447061764434}
+  - component: {fileID: -581156269350533496}
   m_Layer: 0
   m_Name: Fish 2
   m_TagString: Pez
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: a960dbe35333f75419f313bd2357df2a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
@@ -171,3 +172,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ac4ffce2a7a661459ea933aed21c45a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!95 &-581156269350533496
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6685294231130280508}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aef23227e9b9a0841a7cc9d92724d6c9, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

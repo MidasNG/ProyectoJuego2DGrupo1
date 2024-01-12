@@ -9,6 +9,7 @@ TagManager:
   - ground
   - background
   - palanca
+  - Puntuacion
   layers:
   - Default
   - TransparentFX
