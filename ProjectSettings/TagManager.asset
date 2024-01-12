@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Comida
+  - Pez
+  - ground
+  - background
+  - palanca
   layers:
   - Default
   - TransparentFX
@@ -40,4 +45,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Sky Feed Fish
+    uniqueID: 48678459
+    locked: 0
+  - name: Water Feed Fish
+    uniqueID: 47547073
     locked: 0
