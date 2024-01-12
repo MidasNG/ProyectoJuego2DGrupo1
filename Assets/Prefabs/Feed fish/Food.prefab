@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5078047584253903651}
   - component: {fileID: -6714803743846052168}
   m_Layer: 0
-  m_Name: Food 1
+  m_Name: Food
   m_TagString: Comida
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.56, y: 0.56}
+  m_Size: {x: 2.24, y: 2.24}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -146,9 +146,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.025, y: 0.035}
+  m_Offset: {x: -0.02, y: 0}
   serializedVersion: 2
-  m_Radius: 0.09
+  m_Radius: 0.54
 --- !u!114 &-6714803743846052168
 MonoBehaviour:
   m_ObjectHideFlags: 0
