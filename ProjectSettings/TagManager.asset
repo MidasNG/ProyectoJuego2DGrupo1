@@ -9,6 +9,8 @@ TagManager:
   - ground
   - background
   - palanca
+  - RhythmDestroyer
+  - RhythmHeart
   layers:
   - Default
   - TransparentFX
