@@ -14,8 +14,12 @@ public class Playercontroller : MonoBehaviour
     private int jumps = 1;
     private int valuejumps;
     private AudioSource jumpaudio;
+    public float xpositivo;
+    public float xnegativo;
+    public float ypositivo;
+    public float ynegativo;
 
-    
+
     void Start()
     {
         controller = GetComponent<Animator>();
@@ -28,7 +32,7 @@ public class Playercontroller : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetButtonDown("Jump") && valuejumps > 0)
+        if (Input.GetButtonDown("Jump")   && valuejumps > 0)
         {
             rb.AddForce(new Vector2(0, speedjump), ForceMode2D.Impulse);
             
@@ -58,8 +62,9 @@ public class Playercontroller : MonoBehaviour
         {
             giro.flipX = true;
         }
+       
 
-        transform.position = new Vector2(Mathf.Clamp((transform.position.x), -8.88f, 8.88f), Mathf.Clamp((transform.position.y ), -5.41f, 4.59f));
+       transform.position = new Vector2(Mathf.Clamp((transform.position.x), xnegativo, xpositivo), Mathf.Clamp((transform.position.y ), ynegativo, ypositivo));
 
     }
 
