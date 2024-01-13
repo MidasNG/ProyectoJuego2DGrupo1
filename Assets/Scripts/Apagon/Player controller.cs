@@ -13,6 +13,7 @@ public class Playercontroller : MonoBehaviour
     private bool ground = true;
     private int jumps = 1;
     private int valuejumps;
+    private AudioSource jumpaudio;
 
     
     void Start()
@@ -20,16 +21,19 @@ public class Playercontroller : MonoBehaviour
         controller = GetComponent<Animator>();
         giro = GetComponent<SpriteRenderer>();
         rb = GetComponent<Rigidbody2D>();
+        jumpaudio = GetComponent<AudioSource>();
     }
 
 
     void Update()
     {
+
         if (Input.GetButtonDown("Jump") && valuejumps > 0)
         {
             rb.AddForce(new Vector2(0, speedjump), ForceMode2D.Impulse);
             
             valuejumps--;
+            jumpaudio.Play();
 
         }
 
