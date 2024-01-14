@@ -32,17 +32,7 @@ public class StartRhythm : MonoBehaviour
 
         Time.timeScale = 1f;
 
-        Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
-
-
-    //IEnumerator Start()
-    //{
-    //    Time.timeScale = 0;
-
-    //    yield return new WaitForSecondsRealtime(3f);
-
-    //    Time.timeScale = 1;
-    //}
 }

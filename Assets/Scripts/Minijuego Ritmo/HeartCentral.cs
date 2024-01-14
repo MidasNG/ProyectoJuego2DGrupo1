@@ -9,6 +9,7 @@ public class HeartCentral : MonoBehaviour
     private int contador = 0;
     private bool dentro = false;
     private float interact;
+    private float otherInteract;
 
     void Start()
     {
@@ -20,6 +21,7 @@ public class HeartCentral : MonoBehaviour
         transform.position = new Vector3(target.position.x, -4, 0);
 
         interact = Input.GetAxisRaw("InteractGame");
+        otherInteract = Input.GetAxisRaw("Interact");
 
         if (contador == 2)
         {
@@ -30,7 +32,7 @@ public class HeartCentral : MonoBehaviour
             dentro = false;
         }
 
-        if (interact > 0)
+        if (interact > 0 || otherInteract > 0)
         {
             if (dentro == true)
             {

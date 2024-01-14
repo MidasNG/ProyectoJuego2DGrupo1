@@ -5,13 +5,13 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class InteractiveHeart : MonoBehaviour
+public class InteractiveHeartGreen : MonoBehaviour
 {
     public float inicialSpeed;
     private bool dentro = false;
     private int contador = 0;
     private float interact;
-    private static float actualSpeed;
+    private float actualSpeed;
     private float progressiveSpeed = 5f;
 
     private void Start()
@@ -24,7 +24,7 @@ public class InteractiveHeart : MonoBehaviour
         actualSpeed += progressiveSpeed * Time.deltaTime;
        
 
-        interact = Input.GetAxisRaw("InteractGame");
+        interact = Input.GetAxisRaw("Interact");
         
 
         if (contador == 2)

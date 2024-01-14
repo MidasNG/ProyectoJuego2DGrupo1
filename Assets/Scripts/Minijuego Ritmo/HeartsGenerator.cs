@@ -7,7 +7,7 @@ using UnityEngine;
 public class HeartsGenerator : MonoBehaviour
 {
     public Transform target;
-    public GameObject prefabHeart;
+    public GameObject[] arrayPrefabHearts = new GameObject[2];
     private float tiempoEntreCorazones;
     private float comienzoDeTiempo;
     private bool stop = false;
@@ -30,8 +30,9 @@ public class HeartsGenerator : MonoBehaviour
         {
             if (tiempoEntreCorazones <= 0)
             {
-                GameObject heart = Instantiate(prefabHeart, transform.position, Quaternion.identity);
-                comienzoDeTiempo = Random.Range(1, 5);
+                int n = Random.Range(0, 2);
+                GameObject heart = Instantiate(arrayPrefabHearts[n], transform.position, Quaternion.identity);
+                comienzoDeTiempo = 1f;
                 tiempoEntreCorazones = comienzoDeTiempo;
             }
             else
