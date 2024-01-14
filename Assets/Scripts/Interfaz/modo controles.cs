@@ -8,11 +8,22 @@ using UnityEngine.SceneManagement;
 public class modocontroles : MonoBehaviour
 {
     public GameObject aviso;
-   
+    private bool colider = false;
+    
 
     void Start()
     {
         aviso.SetActive(false);
+        
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Interact") && colider == true)
+        {
+            SceneManager.LoadSceneAsync("Menu controles");
+
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -21,8 +32,7 @@ public class modocontroles : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             aviso.SetActive(true);
-            SceneManager.LoadSceneAsync("Menu controles");
-
+            colider = true;
         }
         
     }
@@ -33,7 +43,7 @@ public class modocontroles : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             aviso.SetActive(false);
-            
+            colider = false;
         }
 
     }

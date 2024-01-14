@@ -8,31 +8,42 @@ using UnityEngine.SceneManagement;
 public class modopuntuacion : MonoBehaviour
 {
     public GameObject aviso;
-   
+    private bool colider = false;
 
     void Start()
     {
         aviso.SetActive(false);
+
+    }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Interact") && colider == true)
+        {
+            SceneManager.LoadSceneAsync("Menu Puntuacion");
+
+        }
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
+        colider = true;
 
         if (collision.CompareTag("Player"))
         {
             aviso.SetActive(true);
-            
+
         }
-        
+
     }
 
     public void OnTriggerExit2D(Collider2D collision)
     {
+        colider = false;
 
         if (collision.CompareTag("Player"))
         {
             aviso.SetActive(false);
-            
         }
 
     }

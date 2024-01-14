@@ -9,24 +9,27 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/Menu principal.unity
+    path: Assets/Scenes/interfaz/Menu principal.unity
     guid: f599197ea2657304cb7b2e6b883c362e
   - enabled: 1
-    path: Assets/Scenes/Menu controles.unity
+    path: Assets/Scenes/interfaz/Menu controles.unity
     guid: 82c510544802e5d4ab4c1f82fd5bfaf9
   - enabled: 1
-    path: "Assets/Scenes/Minijuego Apag\xF3n.unity"
+    path: Assets/Scenes/interfaz/Menu minijuegos.unity
+    guid: cfb2d373d3feeac4693c8196a31b44a9
+  - enabled: 1
+    path: "Assets/Scenes/minijuegos/Minijuego Apag\xF3n.unity"
     guid: 7770965fae80f714aa80d42390562b07
   - enabled: 1
-    path: Assets/Scenes/Feed fish.unity
+    path: Assets/Scenes/minijuegos/Feed fish.unity
     guid: 001199feecee5e5469fe0fdcf804db16
   - enabled: 1
-    path: Assets/Scenes/Minijuego Ritmo.unity
+    path: Assets/Scenes/minijuegos/Minijuego Ritmo.unity
     guid: 50a56057306f90646a856ab65a6b9d87
   - enabled: 1
-    path: Assets/Scenes/Minijuego trash.unity
+    path: Assets/Scenes/minijuegos/Minijuego trash.unity
     guid: 98b2e274e7328504e9933daf67ba32ef
   - enabled: 1
-    path: Assets/Scenes/Truck.unity
+    path: Assets/Scenes/minijuegos/Truck.unity
     guid: a6305708aaa9bac4a83d3ef625e71a0c
   m_configObjects: {}
