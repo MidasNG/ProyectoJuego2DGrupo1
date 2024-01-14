@@ -8,28 +8,41 @@ public class HeartsGenerator : MonoBehaviour
 {
     public Transform target;
     public GameObject prefabHeart;
-    public TextMeshProUGUI text;
     private float tiempoEntreCorazones;
     private float comienzoDeTiempo;
-    void Start()
-    {
+    private bool stop = false;
 
+    IEnumerator Start()
+    {
+        stop = false;
+
+        yield return new WaitForSecondsRealtime(33f);
+
+        stop = true;
     }
 
     void Update()
     {
         transform.position = new Vector3(target.position.x - 12.19f, -4.037f, 0);
 
-        if (tiempoEntreCorazones <= 0)
+
+        if (stop == false)
         {
-            GameObject heart = Instantiate(prefabHeart, transform.position, Quaternion.identity);
-            heart.GetComponent<InteractiveHeart>().texto = text;
-            comienzoDeTiempo = Random.Range(1, 5);
-            tiempoEntreCorazones = comienzoDeTiempo;
+            if (tiempoEntreCorazones <= 0)
+            {
+                GameObject heart = Instantiate(prefabHeart, transform.position, Quaternion.identity);
+                comienzoDeTiempo = Random.Range(1, 5);
+                tiempoEntreCorazones = comienzoDeTiempo;
+            }
+            else
+            {
+                tiempoEntreCorazones -= Time.deltaTime;
+            }
         }
-        else
+        else if (stop == true)
         {
-            tiempoEntreCorazones -= Time.deltaTime;
+            Destroy(gameObject);
         }
+
     }
 }

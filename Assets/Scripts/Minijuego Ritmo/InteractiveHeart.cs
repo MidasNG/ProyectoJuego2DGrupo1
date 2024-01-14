@@ -7,22 +7,25 @@ using UnityEngine;
 
 public class InteractiveHeart : MonoBehaviour
 {
-    public float Speed;
+    public float inicialSpeed;
     private bool dentro = false;
-    public int contador = 0;
+    private int contador = 0;
     private float interact;
-    public TextMeshProUGUI texto;
-    private int score = 0;
+    private static float actualSpeed;
+    private float progressiveSpeed = 5f;
 
-    void Awake()
+    private void Start()
     {
-        texto = GetComponent<TextMeshProUGUI>();
+        actualSpeed = inicialSpeed;
     }
-
     void Update()
     {
+        transform.position += transform.right * actualSpeed * Time.deltaTime;
+        actualSpeed += progressiveSpeed * Time.deltaTime;
+       
+
         interact = Input.GetAxisRaw("InteractGame");
-        transform.position += transform.right * Speed * Time.deltaTime;
+        
 
         if (contador == 2)
         {
@@ -36,7 +39,7 @@ public class InteractiveHeart : MonoBehaviour
         {
             if (dentro == true)
             {
-                AddPoint();
+                ScoreManager.instance.AddPoint();
                 Destroy(gameObject);
             }
         }
@@ -62,13 +65,6 @@ public class InteractiveHeart : MonoBehaviour
             Destroy(gameObject);
         }
 
-    }
-
-    private int AddPoint()
-    {
-        score = +100;
-        texto.text = "Score = " + score.ToString();
-        return score;
     }
 
 }
