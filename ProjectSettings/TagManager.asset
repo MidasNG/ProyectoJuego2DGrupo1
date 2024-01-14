@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - RhythmHeart
+  - ground
+  - RhythmDestroyer
+  - background
+  - Final
   layers:
   - Default
   - TransparentFX
