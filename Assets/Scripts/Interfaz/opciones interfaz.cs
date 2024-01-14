@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class opcionesinterfaz : MonoBehaviour
 {
+
+    public int nivelrandom;
+
     public void volver()
     {
         SceneManager.LoadScene("Menu principal");
@@ -33,5 +36,11 @@ public class opcionesinterfaz : MonoBehaviour
     public void minijuego5()
     {
         SceneManager.LoadScene("Truck");
+    }
+
+    public void minijuegorandom()
+    {
+        nivelrandom = Random.Range(4, 8);
+        SceneManager.LoadScene(nivelrandom);
     }
 }

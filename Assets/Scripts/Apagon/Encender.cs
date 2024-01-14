@@ -62,11 +62,13 @@ public class Encender : MonoBehaviour
 
             Destroy(box);
 
-            
-            print(true);
+            colider = false;
+
+            SceneManager.LoadSceneAsync("Menu minijuegos");
+
 
         }
-        colider = false;
+       
 
     }
 
@@ -80,7 +82,7 @@ public class Encender : MonoBehaviour
 
             yield return 5f;
 
-            SceneManager.LoadSceneAsync("Minijuego Apagón");
+            SceneManager.LoadSceneAsync("Menu minijuegos");
 
         }
 
