@@ -5,7 +5,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
-using UnityEngine.WSA;
 
 public class modominijuego : MonoBehaviour
 {
