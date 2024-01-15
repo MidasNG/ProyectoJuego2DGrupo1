@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -15,37 +15,32 @@ public class opcionesinterfaz : MonoBehaviour
 
     public void minijuego1()
     {
-        SceneManager.LoadScene("Carga Apagón");
-        SceneManager.LoadScene("Minijuego Apagón");
+        SceneManager.LoadScene("Carga ApagÃ³n");
     }
 
     public void minijuego2()
     {
         SceneManager.LoadScene("Carga Ritmo");
-        SceneManager.LoadScene("Minijuego Ritmo");
     }
 
     public void minijuego3()
     {
         SceneManager.LoadScene("Carga Feed fish");
-        SceneManager.LoadScene("Feed fish");
     }
 
     public void minijuego4()
     {
         SceneManager.LoadScene("Carga trash");
-        SceneManager.LoadScene("Minijuego trash");
     }
 
     public void minijuego5()
     {
         SceneManager.LoadScene("Carga Truck");
-        SceneManager.LoadScene("Truck");
     }
 
     public void minijuegorandom()
     {
-        nivelrandom = Random.Range(4, 8);
+        nivelrandom = Random.Range(8, 13);
         SceneManager.LoadScene(nivelrandom);
     }
 }
