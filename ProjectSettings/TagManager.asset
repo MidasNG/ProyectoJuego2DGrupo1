@@ -9,6 +9,7 @@ TagManager:
   - RhythmDestroyer
   - background
   - Final
+  - RhythmHeartGreen
   layers:
   - Default
   - TransparentFX
