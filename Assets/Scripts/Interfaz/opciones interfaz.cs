@@ -15,26 +15,31 @@ public class opcionesinterfaz : MonoBehaviour
 
     public void minijuego1()
     {
+        SceneManager.LoadScene("Carga Apagón");
         SceneManager.LoadScene("Minijuego Apagón");
     }
 
     public void minijuego2()
     {
+        SceneManager.LoadScene("Carga Ritmo");
         SceneManager.LoadScene("Minijuego Ritmo");
     }
 
     public void minijuego3()
     {
+        SceneManager.LoadScene("Carga Feed fish");
         SceneManager.LoadScene("Feed fish");
     }
 
     public void minijuego4()
     {
+        SceneManager.LoadScene("Carga trash");
         SceneManager.LoadScene("Minijuego trash");
     }
 
     public void minijuego5()
     {
+        SceneManager.LoadScene("Carga Truck");
         SceneManager.LoadScene("Truck");
     }
 
