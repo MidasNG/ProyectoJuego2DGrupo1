@@ -17,23 +17,38 @@ public class MovPeces : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        while (t >= 0 && t <= 1)
+       
+    }
+
+    void Update()
+    {
+        //t = Mathf.Clamp01(t + velocidad * Time.deltaTime);
+        //transform.position = Vector3.Lerp(StartPosition, FinishPosition, t);
+        // esto hace que vaya hacia 1 lado
+
+        t += velocidad * Time.deltaTime;
+
+        transform.position = Vector3.Lerp(StartPosition, FinishPosition, curva.Evaluate(Mathf.PingPong(t, 1)));
+
+
+        //en la funcion pingpong, 3.2 equivale a 3 caminos y 0.2 de camino
+
+        if (positive)
         {
-            transform.position = Vector3.Lerp(StartPosition, FinishPosition, curva.Evaluate(t));
-
-            if (positive)
-            {
-                t = Mathf.Clamp01(t + velocidad * Time.deltaTime);
-            }
-            else
-            {
-                t = Mathf.Clamp01(t - velocidad * Time.deltaTime);
-            }
-
-            if (t >= 1 || t <= 0)
-            {
-                positive = !positive;
-            }
+            t = Mathf.Clamp01(t + velocidad * Time.deltaTime);
         }
+        else
+        {
+            t = Mathf.Clamp01(t - velocidad * Time.deltaTime);
+        }
+
+        if (t >= 1 || t <= 0)
+        {
+            positive = !positive;
+        }
+
+        transform.position = Vector3.Lerp(StartPosition, FinishPosition, curva.Evaluate(t));
+
+
     }
 }

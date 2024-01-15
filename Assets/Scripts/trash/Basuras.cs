@@ -19,7 +19,7 @@ public class Basuras : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            //ScriptContador.instance.CogerBasuras();
+            ScriptContador.instance.CogerBasuras();
 
             clip.Play();
             render.enabled = false;

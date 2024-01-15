@@ -32,19 +32,18 @@ public class ScriptContador : MonoBehaviour
             contadorTexto.text = "Puntuación: " + contadorBasuras;
 
 
-            if (contadorBasuras == 10)
-            {
-                StartCoroutine(EsperarYCambiarNivel());
-            }
+            //if (contadorBasuras == 10)
+            //{
+            //    StartCoroutine(EsperarYCambiarNivel());
+            //}
         }
 
-        IEnumerator EsperarYCambiarNivel()
-        {
-            win.Play();
-            yield return new WaitForSeconds(3.5f);
+        //IEnumerator EsperarYCambiarNivel()
+        //{
+        //    yield return new WaitForSeconds(3.5f);
 
-            SceneManager.LoadScene("Nivel 2");
-        }
+        //    SceneManager.LoadScene("Nivel 2");
+        //}
 
     }
 }
