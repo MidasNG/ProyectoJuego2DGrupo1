@@ -1,9 +1,10 @@
 using System.Collections;
 using UnityEngine;
 
-public class FoodGenerator : MonoBehaviour
+public class FoodGeneratorRandom : MonoBehaviour
 {
     public GameObject comidaPrefab; // Prefab de la comida
+    public float probabilidadGeneracion = 0.5f; // Probabilidad de generación de comida
     public float tiempoEsperaEntreGeneraciones = 2.0f; // Tiempo de espera entre generaciones
     public float tiempoVidaComida = 5.0f; // Tiempo de vida de la comida
 
@@ -14,7 +15,11 @@ public class FoodGenerator : MonoBehaviour
         // Generar comida si se puede y se presiona la barra espaciadora
         if (puedeGenerar && Input.GetKeyDown(KeyCode.Space))
         {
-            GenerarComida();
+            if (Random.value < probabilidadGeneracion)
+            {
+                GenerarComida();
+            }
+
             StartCoroutine(EsperarParaGenerar());
         }
     }
