@@ -21,7 +21,7 @@ public class modocontroles : MonoBehaviour
     {
         if (Input.GetButtonDown("Interact") && colider == true)
         {
-            SceneManager.LoadSceneAsync("Menu controles");
+          
 
         }
     }
