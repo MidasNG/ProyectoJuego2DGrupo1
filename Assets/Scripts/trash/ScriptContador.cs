@@ -28,14 +28,14 @@ public class ScriptContador : MonoBehaviour
     public void HerirPeces()
     {
         contadorBasuras--;
-        contadorTexto.text = "Puntuación: " + contadorBasuras;
+        contadorTexto.text = "Puntuaci?n: " + contadorBasuras;
     }
 
     public void CogerBasuras()
     {
      
          contadorBasuras++;
-         contadorTexto.text = "Puntuación: " + contadorBasuras;
+         contadorTexto.text = "Puntuaci?n: " + contadorBasuras;
 
 
             if (contadorBasuras == 10)

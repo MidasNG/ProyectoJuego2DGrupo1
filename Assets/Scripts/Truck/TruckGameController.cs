@@ -11,6 +11,7 @@ public class TruckGameController : MonoBehaviour
     private Coroutine coroutine = null;
     [SerializeField] private AnimationCurve curve;
     [SerializeField] private TextMeshProUGUI scoreText, timeText;
+    [SerializeField] private Canvas pauseCanvas;
 
     private void Start()
     {
@@ -42,6 +43,7 @@ public class TruckGameController : MonoBehaviour
 
     private IEnumerator Stop()
     {
+        pauseCanvas.enabled = false;
         while (Time.timeScale > 0.1)
         {
             t = t + Time.unscaledDeltaTime;
