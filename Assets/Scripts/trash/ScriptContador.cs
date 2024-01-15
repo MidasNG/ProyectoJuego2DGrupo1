@@ -38,14 +38,15 @@ public class ScriptContador : MonoBehaviour
          contadorTexto.text = "Puntuaci?n: " + contadorBasuras;
 
 
-            if (contadorBasuras == 10)
-            {
-                StartCoroutine(EsperarYCambiarNivel());
-            }
-     
+        if (contadorBasuras == 10)
+        {
+            StartCoroutine(EsperarYCambiarNivel());
+        }
+
 
         IEnumerator EsperarYCambiarNivel()
         {
+
             yield return new WaitForSeconds(2f);
 
             SceneManager.LoadScene("Menu minijuegos");
