@@ -21,10 +21,10 @@ public class Timer : MonoBehaviour
         {
             timer -= Time.deltaTime;
 
-            textoTimer.text = timer.ToString("f0") + "s";
+            textoTimer.text = "Tiempo: " + timer.ToString("f0");
         } else if (timer == 0)
         {
-            textoTimer.text = timer.ToString("f0") + "s";
+            textoTimer.text = "Tiempo: " + timer.ToString("f0");
         }
 
         

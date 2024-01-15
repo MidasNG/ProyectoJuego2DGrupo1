@@ -18,13 +18,13 @@ public class ScoreManager : MonoBehaviour
     }
     void Start()
     {
-        scoreText.text = "Score = " + score.ToString(); 
+        scoreText.text = "Puntos: " + score.ToString(); 
     }
 
     
     public void AddPoint()
     {
-        score += Random.Range(25, 50);
-        scoreText.text = "Score = " + score.ToString();
+        score += Random.Range(10, 20);
+        scoreText.text = "Puntos: " + score.ToString();
     }
 }
