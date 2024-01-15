@@ -8,14 +8,16 @@ using UnityEngine.SceneManagement;
 public class Pause : MonoBehaviour
 {
     private bool pause = false;
-    private GameObject continuar, salir;
+    private GameObject continuar, salir, texto;
 
     void Start()
     {
         continuar = transform.GetChild(0).gameObject;
         salir = transform.GetChild(1).gameObject;
+        texto = transform.GetChild(2).gameObject;
         continuar.SetActive(false);
         salir.SetActive(false);
+        texto.SetActive(false);
     }
 
     void Update()
@@ -25,16 +27,19 @@ public class Pause : MonoBehaviour
             pause = !pause;
         }
 
-        if (pause)
+        //Los ifs son para el minijuego truck
+        if (pause && Time.timeScale == 1)
         {
             continuar.SetActive(true);
             salir.SetActive(true);
+            texto.SetActive(true);
             Time.timeScale = 0;
         }
-        else
+        else if (Time.timeScale == 0)
         {
             continuar.SetActive(false);
             salir.SetActive(false);
+            texto.SetActive(false);
             Time.timeScale = 1;           
         }
     }
