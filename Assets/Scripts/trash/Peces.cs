@@ -19,6 +19,8 @@ public class Peces : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
+            ScriptContador.instance.HerirPeces();
+
             clipPez.Play();
             render.enabled = false;
             colisionador.enabled = false;

@@ -1229,7 +1229,7 @@ Transform:
   m_GameObject: {fileID: 401301505}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.94990015, y: 2.1973991, z: 0}
+  m_LocalPosition: {x: -1.8, y: 4.3, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1656,7 +1656,7 @@ Transform:
   m_GameObject: {fileID: 574416373}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 14.880099, y: -4.382599, z: 0}
+  m_LocalPosition: {x: 16.29, y: -5.42, z: 0}
   m_LocalScale: {x: 4, y: 4, z: 4}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -1682,7 +1682,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 1.296524
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -2730,7 +2730,6 @@ GameObject:
   - component: {fileID: 1259286852}
   - component: {fileID: 1259286851}
   - component: {fileID: 1259286853}
-  - component: {fileID: 1259286854}
   m_Layer: 0
   m_Name: pescaito
   m_TagString: Untagged
@@ -2974,33 +2973,6 @@ MonoBehaviour:
   distancia: 20
   velocidad: 10
   sprite: {fileID: 1259286846}
---- !u!50 &1259286854
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1259286844}
-  m_BodyType: 0
-  m_Simulated: 0
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 1
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!1 &1286344917
 GameObject:
   m_ObjectHideFlags: 0
@@ -5524,9 +5496,9 @@ SceneRoots:
   m_Roots:
   - {fileID: 463023174}
   - {fileID: 1777019352}
+  - {fileID: 1242473515}
   - {fileID: 891626572}
   - {fileID: 2122491294}
   - {fileID: 1139173960}
   - {fileID: 1631783595}
   - {fileID: 2044794801}
-  - {fileID: 1242473515}

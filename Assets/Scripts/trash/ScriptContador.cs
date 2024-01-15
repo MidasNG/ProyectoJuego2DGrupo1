@@ -25,25 +25,31 @@ public class ScriptContador : MonoBehaviour
 
     }
 
+    public void HerirPeces()
+    {
+        contadorBasuras--;
+        contadorTexto.text = "Puntuación: " + contadorBasuras;
+    }
+
     public void CogerBasuras()
     {
+     
+         contadorBasuras++;
+         contadorTexto.text = "Puntuación: " + contadorBasuras;
+
+
+            if (contadorBasuras == 10)
+            {
+                StartCoroutine(EsperarYCambiarNivel());
+            }
+     
+
+        IEnumerator EsperarYCambiarNivel()
         {
-            contadorBasuras++;
-            contadorTexto.text = "Puntuación: " + contadorBasuras;
+            yield return new WaitForSeconds(2f);
 
-
-            //if (contadorBasuras == 10)
-            //{
-            //    StartCoroutine(EsperarYCambiarNivel());
-            //}
+            SceneManager.LoadScene("Menu minijuegos");
         }
-
-        //IEnumerator EsperarYCambiarNivel()
-        //{
-        //    yield return new WaitForSeconds(3.5f);
-
-        //    SceneManager.LoadScene("Nivel 2");
-        //}
 
     }
 }
