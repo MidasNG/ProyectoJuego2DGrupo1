@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class Peces : MonoBehaviour
 {
-    private AudioSource clipPez;
+    public AudioSource clipPez;
     private SpriteRenderer render;
-    private CapsuleCollider2D colisionador;
+    private BoxCollider2D colisionador;
 
     void Start()
     {
         clipPez = GetComponent<AudioSource>();
         render = GetComponent<SpriteRenderer>();
-        colisionador = GetComponent<CapsuleCollider2D>();
+        colisionador = GetComponent<BoxCollider2D>();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MovSubmarino : MonoBehaviour
 {
-    private SpriteRenderer sprite;
+    public SpriteRenderer sprite;
 
     public float velocidad = 3;
     public float value = 6;
@@ -29,19 +29,19 @@ public class MovSubmarino : MonoBehaviour
         void Update()
         {
             float movHorizontal = Input.GetAxis("Horizontal");
-            transform.Translate(Vector2.down * movHorizontal * velocidad * Time.deltaTime);
+            transform.Translate(Vector2.right * movHorizontal * velocidad * Time.deltaTime);
 
             float movVertical = Input.GetAxis("Vertical");
-            transform.Translate(Vector2.right * movVertical * velocidad * Time.deltaTime);
+            transform.Translate(Vector2.up * movVertical * velocidad * Time.deltaTime);
 
 
-            //if (movHorizontal > 0)
-            //{
-            //    sprite.flipX = true;
-            //}
-            //else if (movHorizontal < 0)
-            //{
-            //    sprite.flipX = false;
-            //}
+            if (movHorizontal > 0)
+            {
+                sprite.flipX = false;
+            }
+            else if (movHorizontal < 0)
+            {
+                sprite.flipX = true;
+            }
     }
 }

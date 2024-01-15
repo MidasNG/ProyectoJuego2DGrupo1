@@ -17,17 +17,6 @@ public class MovPeces : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        ActivarMovimiento();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-    void ActivarMovimiento()
-    {
-        // Coloca la lógica de movimiento aquí
         while (t >= 0 && t <= 1)
         {
             transform.position = Vector3.Lerp(StartPosition, FinishPosition, curva.Evaluate(t));
