@@ -18,9 +18,6 @@ public class Encender : MonoBehaviour
     public AudioSource audiovictory2;
     public AudioSource soundtrack;
     private BoxCollider2D box;
-    private bool colider=true;
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -36,8 +33,6 @@ public class Encender : MonoBehaviour
         audiopalanca=GetComponent<AudioSource>();
 
         box = GetComponent<BoxCollider2D>();
-
-        StartCoroutine(cambiolvl());
 
     }
 
@@ -62,10 +57,7 @@ public class Encender : MonoBehaviour
 
             Destroy(box);
 
-            colider = false;
-
-            SceneManager.LoadSceneAsync("Menu minijuegos");
-
+            StartCoroutine(cambiolvl());
 
         }
        
@@ -74,18 +66,9 @@ public class Encender : MonoBehaviour
 
     public IEnumerator cambiolvl()
     {
-        
-
-        if (colider == false)
-        {
-            print(false);
-
-            yield return 5f;
+            yield return new WaitForSeconds(5f);
 
             SceneManager.LoadSceneAsync("Menu minijuegos");
-
-        }
-
 
     }
 }
