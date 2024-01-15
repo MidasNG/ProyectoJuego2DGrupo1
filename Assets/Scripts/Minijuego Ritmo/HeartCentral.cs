@@ -6,8 +6,10 @@ public class HeartCentral : MonoBehaviour
 {
     public Transform target;
     private Animator animator;
-    private int contador = 0;
-    private bool dentro = false;
+    private int contadorRed = 0;
+    private bool dentroRed = false;
+    private int contadorGreen = 0;
+    private bool dentroGreen = false;
     private float interact;
     private float otherInteract;
 
@@ -23,21 +25,43 @@ public class HeartCentral : MonoBehaviour
         interact = Input.GetAxisRaw("InteractGame");
         otherInteract = Input.GetAxisRaw("Interact");
 
-        if (contador == 2)
+        if (contadorRed == 2)
         {
-            dentro = true;
+            dentroRed = true;
         }
         else
         {
-            dentro = false;
+            dentroRed = false;
         }
 
-        if (interact > 0 || otherInteract > 0)
+        if (interact > 0)
         {
-            if (dentro == true)
+            if (dentroRed == true)
             {
                 animator.SetBool("Dentro", true);
-            }else
+            }
+            else
+            {
+                animator.SetBool("Dentro", false);
+            }
+        }
+
+        if (contadorGreen == 2)
+        {
+            dentroGreen = true;
+        }
+        else
+        {
+            dentroGreen = false;
+        }
+
+        if (otherInteract > 0)
+        {
+            if (dentroGreen == true)
+            {
+                animator.SetBool("Dentro", true);
+            }
+            else
             {
                 animator.SetBool("Dentro", false);
             }
@@ -48,14 +72,24 @@ public class HeartCentral : MonoBehaviour
     {
         if (collision.gameObject.tag == "RhythmHeart")
         {
-            contador++;
+            contadorRed++;
+        }
+
+        if (collision.gameObject.tag == "RhythmHeartGreen")
+        {
+            contadorGreen++;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "RhythmHeart")
         {
-            contador--;
+            contadorRed--;
+        }
+
+        if (collision.gameObject.tag == "RhythmHeartGreen")
+        {
+            contadorGreen--;
         }
 
     }

@@ -16,7 +16,7 @@ public class HeartsGenerator : MonoBehaviour
     {
         stop = false;
 
-        yield return new WaitForSecondsRealtime(33f);
+        yield return new WaitForSecondsRealtime(23f);
 
         stop = true;
     }
