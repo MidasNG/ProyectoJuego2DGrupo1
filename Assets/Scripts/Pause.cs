@@ -31,7 +31,6 @@ public class PauseTruck : MonoBehaviour
                 salir.SetActive(true);
                 texto.SetActive(true);
                 Time.timeScale = 0;
-                print("flipA");
             }
             else
             {
@@ -39,7 +38,6 @@ public class PauseTruck : MonoBehaviour
                 salir.SetActive(false);
                 texto.SetActive(false);
                 Time.timeScale = 1;
-                print("flipB");
             }
 
         
@@ -54,5 +52,19 @@ public class PauseTruck : MonoBehaviour
     public void Continuar()
     {
         pause = !pause;
+        if (pause)
+        {
+            continuar.SetActive(true);
+            salir.SetActive(true);
+            texto.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            continuar.SetActive(false);
+            salir.SetActive(false);
+            texto.SetActive(false);
+            Time.timeScale = 1;
+        }
     }
 }
