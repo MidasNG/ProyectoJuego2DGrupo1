@@ -30,14 +30,14 @@ public class TruckGameController : MonoBehaviour
     {
         combo++;
         score += 10 * combo;
-        scoreText.text = score.ToString();
+        scoreText.text = "Puntos: " + score.ToString();
     }
 
     public void SubtractScore()
     {
         combo = 0;
         score-= score / 100 * 33;
-        scoreText.text = score.ToString();
+        scoreText.text = "Puntos: " + score.ToString();
     }
 
     private IEnumerator Stop()
@@ -59,7 +59,7 @@ public class TruckGameController : MonoBehaviour
         {
             yield return new WaitForSeconds(1f);
             timer--;
-            timeText.text = timer.ToString();
+            timeText.text = "Tiempo: " + timer.ToString();
         }
     }
 }
