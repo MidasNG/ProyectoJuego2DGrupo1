@@ -46,6 +46,7 @@ public class PauseTruck : MonoBehaviour
 
     public void Salir()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Menu minijuegos");
     }
 

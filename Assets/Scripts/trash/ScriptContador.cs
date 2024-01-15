@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,14 +28,14 @@ public class ScriptContador : MonoBehaviour
     public void HerirPeces()
     {
         contadorBasuras--;
-        contadorTexto.text = "Puntuaci?n: " + contadorBasuras;
+        contadorTexto.text = "Puntuación: " + contadorBasuras;
     }
 
     public void CogerBasuras()
     {
      
          contadorBasuras++;
-         contadorTexto.text = "Puntuaci?n: " + contadorBasuras;
+         contadorTexto.text = "Puntuación: " + contadorBasuras;
 
 
         if (contadorBasuras == 10)

@@ -52,6 +52,7 @@ public class TruckGameController : MonoBehaviour
         }
 
         yield return new WaitForSecondsRealtime(2f);
+        Time.timeScale = 1;
         SceneManager.LoadScene("Menu minijuegos");
     }
 

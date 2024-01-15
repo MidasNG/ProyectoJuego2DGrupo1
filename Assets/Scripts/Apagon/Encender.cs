@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -55,7 +55,7 @@ public class Encender : MonoBehaviour
             audiovictory2.Play();
             soundtrack.volume = 0.08f;
 
-            ScoreManagerApag�n.instance.AddPoint();
+            ScoreManagerApagón.instance.AddPoint();
 
             Destroy(box);
 
