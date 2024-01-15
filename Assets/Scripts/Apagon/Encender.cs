@@ -68,7 +68,7 @@ public class Encender : MonoBehaviour
 
     public IEnumerator cambiolvl()
     {
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(3f);
 
             SceneManager.LoadSceneAsync("Menu minijuegos");
 
