@@ -14,36 +14,35 @@ public class HeartsGenerator : MonoBehaviour
 
     IEnumerator Start()
     {
-        stop = false;
+            stop = false;
 
-        yield return new WaitForSecondsRealtime(23f);
+            yield return new WaitForSeconds(18.5f);
 
-        stop = true;
+            stop = true;
     }
 
     void Update()
     {
         transform.position = new Vector3(target.position.x - 12.19f, -4.037f, 0);
-
-
+            
         if (stop == false)
-        {
-            if (tiempoEntreCorazones <= 0)
             {
-                int n = Random.Range(0, 2);
-                GameObject heart = Instantiate(arrayPrefabHearts[n], transform.position, Quaternion.identity);
-                comienzoDeTiempo = 1f;
-                tiempoEntreCorazones = comienzoDeTiempo;
+                if (tiempoEntreCorazones <= 0)
+                {
+                    int n = Random.Range(0, 2);
+                    GameObject heart = Instantiate(arrayPrefabHearts[n], transform.position, Quaternion.identity);
+                    comienzoDeTiempo = 1.5f;
+                    tiempoEntreCorazones = comienzoDeTiempo;
+                }
+                else
+                {
+                    tiempoEntreCorazones -= Time.deltaTime;
+                }
             }
-            else
-            {
-                tiempoEntreCorazones -= Time.deltaTime;
-            }
-        }
         else if (stop == true)
-        {
-            Destroy(gameObject);
-        }
+            {
+                Destroy(gameObject);
+            }
 
     }
 }

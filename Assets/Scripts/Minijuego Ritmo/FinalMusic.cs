@@ -10,16 +10,17 @@ public class FinalMusic : MonoBehaviour
     private AudioSource finalMusic;
     private string nombreDeLaSiguienteEscena = "Menu minijuegos";
 
+
     IEnumerator Start()
     {
         finalMusic = GetComponent<AudioSource>();
         finalMusic.Pause();
 
-        yield return new WaitForSecondsRealtime(23f);
+        yield return new WaitForSeconds(20f);
 
         finalMusic.Play();
 
-        yield return new WaitForSecondsRealtime(5f);
+        yield return new WaitForSeconds(5f);
 
         SceneManager.LoadScene(nombreDeLaSiguienteEscena);
     }

@@ -27,4 +27,16 @@ public class ScoreManager : MonoBehaviour
         score += Random.Range(10, 20);
         scoreText.text = "Puntos: " + score.ToString();
     }
+
+    public void RemovePoint()
+    {
+        score -= Random.Range(10, 20);
+        scoreText.text = "Puntos; " + score.ToString();
+    }
+
+    public void RemovePoint2()
+    {
+        score -= Random.Range(5, 15);
+        scoreText.text = "Puntos; " + score.ToString();
+    }
 }

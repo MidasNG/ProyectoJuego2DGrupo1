@@ -11,8 +11,8 @@ public class InteractiveHeartRed : MonoBehaviour
     private bool dentro = false;
     private int contador = 0;
     private float interact;
+    private float otherInteract;
     private float actualSpeed;
-    private float progressiveSpeed = 5f;
 
     private void Start()
     {
@@ -21,10 +21,10 @@ public class InteractiveHeartRed : MonoBehaviour
     void Update()
     {
         transform.position += transform.right * actualSpeed * Time.deltaTime;
-        actualSpeed += progressiveSpeed * Time.deltaTime;
        
 
         interact = Input.GetAxisRaw("InteractGame");
+        otherInteract = Input.GetAxisRaw("Interact");
         
 
         if (contador == 2)
@@ -34,14 +34,26 @@ public class InteractiveHeartRed : MonoBehaviour
         {
             dentro = false;
         }
-
-        if (interact > 0)
+        if (Time.timeScale == 1)
         {
-            if (dentro == true)
+
+            if (otherInteract > 0)
             {
-                ScoreManager.instance.AddPoint();
-                Destroy(gameObject);
+                if (dentro == true)
+                {
+                    ScoreManager.instance.RemovePoint();
+                    Destroy(gameObject);
+                }
             }
+            if (interact > 0)
+            {
+                if (dentro == true)
+                {
+                    ScoreManager.instance.AddPoint();
+                    Destroy(gameObject);
+                }
+            }
+
         }
     }
 
@@ -62,6 +74,7 @@ public class InteractiveHeartRed : MonoBehaviour
 
         if (collision.gameObject.tag == "RhythmDestroyer")
         {
+            ScoreManager.instance.RemovePoint2();
             Destroy(gameObject);
         }
 
