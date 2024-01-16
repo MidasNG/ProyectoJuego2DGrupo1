@@ -38,6 +38,11 @@ public class opcionesinterfaz : MonoBehaviour
         SceneManager.LoadScene("Carga Truck");
     }
 
+    public void pantallaMinijuegos()
+    {
+        SceneManager.LoadScene("Menu minijuegos");
+    }
+
     public void minijuegorandom()
     {
         nivelrandom = Random.Range(8, 13);
