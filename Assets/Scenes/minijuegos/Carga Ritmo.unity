@@ -243,7 +243,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -967.81, y: -536.07}
+  m_AnchoredPosition: {x: -967.84686, y: -536.07}
   m_SizeDelta: {x: 175.2, y: 175.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &42619542
@@ -1221,8 +1221,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -962.67, y: -1078.52}
-  m_SizeDelta: {x: 186.07, y: 43.61}
+  m_AnchoredPosition: {x: -962.95, y: -1078.52}
+  m_SizeDelta: {x: 272.0682, y: 43.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1427592270
 MonoBehaviour:
@@ -1244,7 +1244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: espacio
+  m_text: "pulsar coraz\xF3n rojo = espacio"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1253,8 +1253,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190335
-  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1355,8 +1355,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -960.8194, y: -1079.5499}
-  m_SizeDelta: {x: 306.54, y: 43.61}
+  m_AnchoredPosition: {x: -960.24414, y: -1079.5499}
+  m_SizeDelta: {x: 448.2173, y: 43.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1449848675
 MonoBehaviour:
@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: a
+  m_text: "pulsar coraz\xF3n verde = a"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1387,8 +1387,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281653532
-  m_fontColor: {r: 0.108134575, g: 0.8490566, b: 0.20314838, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

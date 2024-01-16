@@ -327,7 +327,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -967.81, y: -536.07}
+  m_AnchoredPosition: {x: -967.8616, y: -536.07}
   m_SizeDelta: {x: 175.2, y: 175.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &517925966
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Recoge la basura del mar y manten a salvo los peces.
+  m_text: "Recoge la basura del mar y mant\xE9n a salvo los peces."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1506,7 +1506,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -960.8194, y: -1079.5499}
+  m_AnchoredPosition: {x: -962.44934, y: -1079.5499}
   m_SizeDelta: {x: 306.54, y: 43.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1833410762
@@ -1816,7 +1816,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -961.28, y: -1080.54}
+  m_AnchoredPosition: {x: -962.91, y: -1080.54}
   m_SizeDelta: {x: 275.8315, y: 43.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1876744870
