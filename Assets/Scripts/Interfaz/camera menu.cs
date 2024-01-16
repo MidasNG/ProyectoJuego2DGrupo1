@@ -17,6 +17,7 @@ public class cameramenu : MonoBehaviour
     {
       
         transform.position = new Vector3(Mathf.Clamp(objetivo.position.x, -30, 30), 0, -10);
+        if (Input.GetButtonDown("Cancel")) Application.Quit();
 
     }
 }
