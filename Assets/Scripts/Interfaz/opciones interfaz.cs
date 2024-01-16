@@ -11,6 +11,7 @@ public class opcionesinterfaz : MonoBehaviour
     public void volver()
     {
         SceneManager.LoadScene("Menu principal");
+        Time.timeScale = 1;
     }
 
     public void minijuego1()
