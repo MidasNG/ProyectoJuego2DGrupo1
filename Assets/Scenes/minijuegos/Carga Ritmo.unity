@@ -1221,7 +1221,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -962.95, y: -1078.52}
+  m_AnchoredPosition: {x: -962.93, y: -1078.52}
   m_SizeDelta: {x: 272.0682, y: 43.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1427592270
@@ -1244,7 +1244,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "pulsar coraz\xF3n rojo = espacio"
+  m_text: "Pulsar coraz\xF3n rojo = espacio"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1355,7 +1355,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -960.24414, y: -1079.5499}
+  m_AnchoredPosition: {x: -960.29, y: -1079.5499}
   m_SizeDelta: {x: 448.2173, y: 43.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1449848675
@@ -1378,7 +1378,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "pulsar coraz\xF3n verde = a"
+  m_text: "Pulsar coraz\xF3n verde = a"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1749,7 +1749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -962.1877, y: -1075.99}
+  m_AnchoredPosition: {x: -962.0796, y: -1075.99}
   m_SizeDelta: {x: 267.46, y: 54.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1855671702
