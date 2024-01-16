@@ -23,8 +23,8 @@ public class TruckBehaviour : MonoBehaviour
     void Update()
     {
         //No dejar pasar a los camiones
-        if (approveable && Input.GetButtonDown("Left") && Mathf.Approximately(transform.position.x, -4.2f)) StartCoroutine(Vanish());
-        if (approveable && Input.GetButtonDown("Right")&& Mathf.Approximately(transform.position.x, 4.3f)) StartCoroutine(Vanish());
+        if (approveable && Input.GetButtonDown("Left") && Mathf.Approximately(transform.position.x, -4.2f) && Time.timeScale == 1) StartCoroutine(Vanish());
+        if (approveable && Input.GetButtonDown("Right")&& Mathf.Approximately(transform.position.x, 4.3f) && Time.timeScale == 1) StartCoroutine(Vanish());
     }
 
     //Moverse desde fuera hacia dentro de la pantalla

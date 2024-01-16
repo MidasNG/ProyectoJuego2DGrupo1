@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class TruckGameController : MonoBehaviour
 {
-    private float time = 0f, t = 0f, finishTime = 10f;
-    private int score = 0, combo = 0, timer = 10;
+    private float time = 0f, t = 0f, finishTime = 10f, score = 0;
+    private int combo = 0, timer = 10;
     private Coroutine coroutine = null;
     [SerializeField] private AnimationCurve curve;
     [SerializeField] private TextMeshProUGUI scoreText, timeText;
@@ -31,14 +31,14 @@ public class TruckGameController : MonoBehaviour
     {
         combo++;
         score += 10 * combo;
-        scoreText.text = "Puntos: " + score.ToString();
+        scoreText.text = "Puntos: " + ((int)score).ToString();
     }
 
     public void SubtractScore()
     {
         combo = 0;
         score-= score / 100 * 33;
-        scoreText.text = "Puntos: " + score.ToString();
+        scoreText.text = "Puntos: " + ((int)score).ToString();
     }
 
     private IEnumerator Stop()
