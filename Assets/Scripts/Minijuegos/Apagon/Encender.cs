@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
 public class Encender : MonoBehaviour
 {
@@ -18,6 +19,11 @@ public class Encender : MonoBehaviour
     public AudioSource audiovictory2;
     public AudioSource soundtrack;
     private BoxCollider2D box;
+    private int lvl;
+    public GameObject lvl1;
+    public GameObject lvl3;
+    public GameObject lvl2;
+    public GameObject lvl4;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +39,33 @@ public class Encender : MonoBehaviour
         audiopalanca=GetComponent<AudioSource>();
 
         box = GetComponent<BoxCollider2D>();
+
+        lvl = Random.Range(1,5);
+
+
+        if (lvl == 1)
+        {
+            lvl1.SetActive(true);
+            transform.position = new Vector2(-0.3f,2.64f);
+        }
+
+        else if (lvl == 2)
+        {
+            lvl2.SetActive(true);
+            transform.position = new Vector2(15.23f, 2.64f);
+        }
+
+        else if (lvl == 3)
+        {
+            lvl3.SetActive(true);
+            transform.position = new Vector2(-0.3f,5.8f);
+        }
+
+        else if (lvl == 4)
+        {
+            lvl4.SetActive(true);
+            transform.position = new Vector2(7.73f, 5.75f);
+        }
 
     }
 
