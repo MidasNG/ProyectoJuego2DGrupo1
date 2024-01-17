@@ -71,12 +71,12 @@ public class TruckBehaviour : MonoBehaviour
         StopCoroutine(MovePointB());
         if (spriteRenderer.color.g == 1 && !Mathf.Approximately(transform.position.y, pointB))
         {
-            game.SubtractScore();
+            ScoreManager.instance.RemovePointTruck();
             incorrect.TriggerNotif();
         }
         else
         {
-            game.AddScore();
+            ScoreManager.instance.AddPointTruck();
             correct.TriggerNotif();
         }
         vanishT = 0;
@@ -95,7 +95,7 @@ public class TruckBehaviour : MonoBehaviour
         {
             if (game != null)
             {
-                game.SubtractScore();
+                ScoreManager.instance.RemovePointTruck();
             }
 
             if (miss != null)

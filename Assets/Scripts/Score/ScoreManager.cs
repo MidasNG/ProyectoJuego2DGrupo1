@@ -24,6 +24,7 @@ public class ScoreManager : MonoBehaviour
     int scoreFeed = 0;
 
     float contadorApagon = 15f;
+    int comboTruck = 0;
 
     private void Awake()
     {
@@ -118,5 +119,19 @@ public class ScoreManager : MonoBehaviour
     {
         scoreFeed += 5;
         scoreTextFeed.text = "Puntos: " + scoreFeed.ToString();
+    }
+
+    public void AddPointTruck()
+    {
+        comboTruck++;
+        scoreTruck += 15 + comboTruck;
+        scoreTextTruck.text = "Puntos: " + scoreTruck.ToString();
+    }
+
+    public void RemovePointTruck()
+    {
+        comboTruck = 0;
+        scoreTruck -= 20;
+        scoreTextTruck.text = "Puntos: " + scoreTruck.ToString();
     }
 }
