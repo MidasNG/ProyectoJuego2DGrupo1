@@ -772,9 +772,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 572091832}
-  - component: {fileID: 572091833}
   - component: {fileID: 572091834}
   - component: {fileID: 572091835}
+  - component: {fileID: 572091836}
   m_Layer: 0
   m_Name: Background
   m_TagString: background
@@ -802,28 +802,6 @@ Transform:
   - {fileID: 68330646}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &572091833
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 572091831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e5125fc3167ee14c848ddf1689e2126, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dark: {fileID: 1761252540}
-  dark2: {fileID: 831297517}
-  verde: {fileID: 1912856692}
-  verdefondo: {fileID: 1288270629}
-  palanca: {fileID: 68330647}
-  lightup: {fileID: 698699386}
-  night: {fileID: 1218318623}
-  audiovictory: {fileID: 835291416}
-  audiovictory2: {fileID: 639198105}
-  soundtrack: {fileID: 1737874033}
 --- !u!61 &572091834
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -965,6 +943,28 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &572091836
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572091831}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 475ee6c37528c7743a047aa3963b69d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dark: {fileID: 1761252540}
+  dark2: {fileID: 831297517}
+  verde: {fileID: 1912856692}
+  verdefondo: {fileID: 1288270629}
+  palanca: {fileID: 68330647}
+  lightup: {fileID: 698699386}
+  night: {fileID: 1218318623}
+  audiovictory: {fileID: 835291416}
+  audiovictory2: {fileID: 639198105}
+  soundtrack: {fileID: 1737874033}
 --- !u!1 &637711147
 GameObject:
   m_ObjectHideFlags: 0
@@ -5541,6 +5541,57 @@ Transform:
   m_Children: []
   m_Father: {fileID: 572091832}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2076960323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2076960325}
+  - component: {fileID: 2076960324}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2076960324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076960323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 183da63dc8a14be4ba3192a58f04a96a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minigameScenes:
+  - Feed fish (Historia)
+  - "Minijuego Apag\xF3n (Historia)"
+  - Minijuego Ritmo (Historia)
+  - Minijuego trash (Historia)
+  - Truck (Historia)
+  creditsScene: Credits Scene
+--- !u!4 &2076960325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2076960323}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.638796, y: -0.0853069, z: -0.19915818}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2132154250
 GameObject:
   m_ObjectHideFlags: 0
@@ -5778,3 +5829,4 @@ SceneRoots:
   - {fileID: 552856915}
   - {fileID: 1264702966}
   - {fileID: 1016377938}
+  - {fileID: 2076960325}

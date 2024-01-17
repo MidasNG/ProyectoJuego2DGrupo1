@@ -91,10 +91,18 @@ public class TruckBehaviour : MonoBehaviour
 
     private void VanishMiss()
     {
-        if (spriteRenderer.color.r == 1)
+        if (spriteRenderer != null && spriteRenderer.color.r == 1)
         {
-            game.SubtractScore();
-            miss.TriggerNotif();
+            if (game != null)
+            {
+                game.SubtractScore();
+            }
+
+            if (miss != null)
+            {
+                miss.TriggerNotif();
+            }
+
             Destroy(gameObject);
         }
     }
