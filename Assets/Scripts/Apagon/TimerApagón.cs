@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class TimerApagón : MonoBehaviour
 {
@@ -23,11 +24,12 @@ public class TimerApagón : MonoBehaviour
 
             textoTimer.text = "Tiempo: " + timer.ToString("f0");
         }
-        else if (timer == 0)
+        else if (timer < 1)
         {
-            textoTimer.text = "Tiempo: " + timer.ToString("f0");
+            SceneManager.LoadSceneAsync("Menu minijuegos");
+
         }
 
-
+       
     }
 }
