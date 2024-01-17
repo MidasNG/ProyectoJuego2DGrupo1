@@ -24,8 +24,9 @@ public class HeartsGenerator : MonoBehaviour
     void Update()
     {
         transform.position = new Vector3(target.position.x - 12.19f, -4.037f, 0);
-            
-        if (stop == false)
+        if (Time.timeScale == 1)
+        {
+            if (stop == false)
             {
                 if (tiempoEntreCorazones <= 0)
                 {
@@ -39,10 +40,10 @@ public class HeartsGenerator : MonoBehaviour
                     tiempoEntreCorazones -= Time.deltaTime;
                 }
             }
-        else if (stop == true)
+            else if (stop == true)
             {
                 Destroy(gameObject);
             }
-
+        }
     }
 }

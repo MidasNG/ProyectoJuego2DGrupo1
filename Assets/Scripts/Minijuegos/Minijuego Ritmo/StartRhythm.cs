@@ -12,6 +12,7 @@ public class StartRhythm : MonoBehaviour
 
     private void Start()
     {
+        gameObject.SetActive(true);
         Time.timeScale = 0f;
         StartCoroutine(CuentaAtras());
     }
