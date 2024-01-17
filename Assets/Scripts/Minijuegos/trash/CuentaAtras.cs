@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 public class CuentaAtras : MonoBehaviour
 {
-    public Text countdownText;
+    public TextMeshProUGUI countdownText;
     public float countdownTime = 30f; // Tiempo inicial para la cuenta atrás
 
     void Start()

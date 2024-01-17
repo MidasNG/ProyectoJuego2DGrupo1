@@ -19,7 +19,7 @@ public class Peces : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            ScriptContador.instance.HerirPeces();
+            ScoreManager.instance.RemovePointTrash();
 
             clipPez.Play();
             render.enabled = false;

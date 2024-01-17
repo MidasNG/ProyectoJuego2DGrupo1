@@ -31,40 +31,43 @@ public class Playercontroller : MonoBehaviour
 
     void Update()
     {
-
-        if (Input.GetButtonDown("Jump")   && valuejumps > 0)
+        if (Time.timeScale == 1)
         {
-            rb.AddForce(new Vector2(0, speedjump), ForceMode2D.Impulse);
-            
-            valuejumps--;
-            jumpaudio.Play();
 
+            if (Input.GetButtonDown("Jump") && valuejumps > 0)
+            {
+                rb.AddForce(new Vector2(0, speedjump), ForceMode2D.Impulse);
+
+                valuejumps--;
+                jumpaudio.Play();
+
+            }
+
+            controller.SetBool("jump", Input.GetAxisRaw("Jump") != 0);
+
+
+            if (ground)
+            {
+                valuejumps = jumps;
+            }
+
+            rb.velocity = new Vector2(speedrun * Input.GetAxisRaw("Horizontal"), rb.velocity.y);
+
+            controller.SetBool("run", Input.GetAxisRaw("Horizontal") != 0);
+
+
+            if (Input.GetAxisRaw("Horizontal") > 0)
+            {
+                giro.flipX = false;
+            }
+            else if (Input.GetAxisRaw("Horizontal") < 0)
+            {
+                giro.flipX = true;
+            }
+
+
+            transform.position = new Vector2(Mathf.Clamp((transform.position.x), xnegativo, xpositivo), Mathf.Clamp((transform.position.y), ynegativo, ypositivo));
         }
-
-        controller.SetBool("jump", Input.GetAxisRaw("Jump") != 0);
-       
-
-        if (ground)
-        {
-            valuejumps = jumps;
-        }
-
-        rb.velocity = new Vector2(speedrun * Input.GetAxisRaw("Horizontal"), rb.velocity.y);
-
-        controller.SetBool("run", Input.GetAxisRaw("Horizontal") != 0);
-
-
-        if (Input.GetAxisRaw("Horizontal") > 0)
-        {
-            giro.flipX = false;
-        }
-        else if (Input.GetAxisRaw("Horizontal") < 0)
-        {
-            giro.flipX = true;
-        }
-       
-
-       transform.position = new Vector2(Mathf.Clamp((transform.position.x), xnegativo, xpositivo), Mathf.Clamp((transform.position.y ), ynegativo, ypositivo));
 
     }
 

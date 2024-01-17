@@ -88,7 +88,7 @@ public class Encender : MonoBehaviour
             audiovictory2.Play();
             soundtrack.volume = 0.08f;
 
-            ScoreManagerApagón.instance.AddPoint();
+            ScoreManager.instance.AddPointApagon();
 
             Destroy(box);
 

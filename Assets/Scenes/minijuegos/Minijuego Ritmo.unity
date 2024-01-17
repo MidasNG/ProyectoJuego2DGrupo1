@@ -270,7 +270,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de614a9a11cdd81478a7deb4987feb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreText: {fileID: 14901991}
+  scoreTextRhythm: {fileID: 14901991}
+  scoreTextApagon: {fileID: 14901991}
+  scoreTextTruck: {fileID: 14901991}
+  scoreTextTrash: {fileID: 14901991}
+  scoreTextFeed: {fileID: 14901991}
 --- !u!1 &84748442
 GameObject:
   m_ObjectHideFlags: 0

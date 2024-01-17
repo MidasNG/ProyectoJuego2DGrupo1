@@ -9,6 +9,7 @@ public class FishCollision : MonoBehaviour
         // Verificar si colisiona con la comida
         if (other.gameObject.CompareTag("Comida"))
         {
+            ScoreManager.instance.AddPointFeed();
             // Destruir tanto la comida como el objeto del pez
             Destroy(gameObject);
             Destroy(other.gameObject);

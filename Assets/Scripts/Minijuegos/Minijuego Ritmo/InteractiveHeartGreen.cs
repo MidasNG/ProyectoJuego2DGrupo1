@@ -40,7 +40,7 @@ public class InteractiveHeartGreen : MonoBehaviour
             {
                 if (dentro == true)
                 {
-                    ScoreManager.instance.RemovePoint();
+                    ScoreManager.instance.RemovePointRhythm();
                     Destroy(gameObject);
                 }
             }
@@ -48,7 +48,7 @@ public class InteractiveHeartGreen : MonoBehaviour
             {
                 if (dentro == true)
                 {
-                    ScoreManager.instance.AddPoint();
+                    ScoreManager.instance.AddPointRhythm();
                     Destroy(gameObject);
                 }
             }
@@ -73,7 +73,7 @@ public class InteractiveHeartGreen : MonoBehaviour
 
         if (collision.gameObject.tag == "RhythmDestroyer")
         {
-            ScoreManager.instance.RemovePoint2();
+            ScoreManager.instance.RemovePointRhythm2();
             Destroy(gameObject);
         }
 
