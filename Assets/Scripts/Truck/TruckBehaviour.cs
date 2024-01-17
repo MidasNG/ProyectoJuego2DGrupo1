@@ -12,6 +12,7 @@ public class TruckBehaviour : MonoBehaviour
     private float pointA = 0, t, vanishT = 0, pointB = 10, speed = 4;
     private bool approveable = false;
     private Notification miss, correct, incorrect;
+    private bool vanish = false;
 
     private void Start()
     {
@@ -23,8 +24,12 @@ public class TruckBehaviour : MonoBehaviour
     void Update()
     {
         //No dejar pasar a los camiones
-        if (approveable && Input.GetButtonDown("Left") && Mathf.Approximately(transform.position.x, -4.2f) && Time.timeScale == 1) StartCoroutine(Vanish());
-        if (approveable && Input.GetButtonDown("Right")&& Mathf.Approximately(transform.position.x, 4.3f) && Time.timeScale == 1) StartCoroutine(Vanish());
+        if (!vanish)
+        {
+            if (approveable && Input.GetButtonDown("Left") && Mathf.Approximately(transform.position.x, -4.2f) && Time.timeScale == 1) StartCoroutine(Vanish());
+
+            if (approveable && Input.GetButtonDown("Right") && Mathf.Approximately(transform.position.x, 4.3f) && Time.timeScale == 1) StartCoroutine(Vanish());
+        }
     }
 
     //Moverse desde fuera hacia dentro de la pantalla
@@ -61,6 +66,7 @@ public class TruckBehaviour : MonoBehaviour
     //Desaparecer
     private IEnumerator Vanish()
     {
+        vanish = true;
         StopCoroutine(MovePointA());
         StopCoroutine(MovePointB());
         if (spriteRenderer.color.g == 1 && !Mathf.Approximately(transform.position.y, pointB))
