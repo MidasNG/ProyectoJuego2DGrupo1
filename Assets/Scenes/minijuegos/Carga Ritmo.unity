@@ -1214,7 +1214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3614315905763522704, guid: 4c54d6c27b61e34458c2d6ec8de25d80, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 42.88147
+      value: 46.9
       objectReference: {fileID: 0}
     - target: {fileID: 3614315905763522704, guid: 4c54d6c27b61e34458c2d6ec8de25d80, type: 3}
       propertyPath: m_SizeDelta.y
@@ -1250,11 +1250,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3614315905763522704, guid: 4c54d6c27b61e34458c2d6ec8de25d80, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1919.55
+      value: -1919.73
       objectReference: {fileID: 0}
     - target: {fileID: 3614315905763522704, guid: 4c54d6c27b61e34458c2d6ec8de25d80, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -3.4500122
+      value: -3.5900269
       objectReference: {fileID: 0}
     - target: {fileID: 3614315905763522704, guid: 4c54d6c27b61e34458c2d6ec8de25d80, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1320,7 +1320,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -962.4, y: -1078.83}
+  m_AnchoredPosition: {x: -962.4, y: -1078.72}
   m_SizeDelta: {x: 297.9, y: 43.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1427592270
@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Corazones rojos = espacio
+  m_text: Corazones rojos = espacio - X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
   m_sharedMaterial: {fileID: 5590187449773088812, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Corazones verdes = a
+  m_text: Corazones verdes = a - Y
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
   m_sharedMaterial: {fileID: 5590187449773088812, guid: 18d5902327a09304b9518e27521ece1c, type: 2}

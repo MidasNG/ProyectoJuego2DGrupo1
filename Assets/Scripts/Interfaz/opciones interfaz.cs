@@ -14,6 +14,7 @@ public class opcionesinterfaz : MonoBehaviour
 
     public void minijuego1()
     {
+
         StartCoroutine(minijuegoApagon());
     }
 
