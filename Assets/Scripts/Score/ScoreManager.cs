@@ -176,7 +176,7 @@ public class ScoreManager : MonoBehaviour
     public void AddPointTruck()
     {
         comboTruck++;
-        scoreTruck += 10 + comboTruck;
+        scoreTruck += 5 + comboTruck/3;
         scoreTextTruck.text = "Puntos: " + scoreTruck.ToString();
         if (highscoreTruck < scoreTruck)
         {
@@ -188,7 +188,8 @@ public class ScoreManager : MonoBehaviour
     public void RemovePointTruck()
     {
         comboTruck = 0;
-        scoreTruck -= 20;
+        scoreTruck -= 30;
+        if (scoreTruck < 0) scoreTruck = 0;
         scoreTextTruck.text = "Puntos: " + scoreTruck.ToString();
     }
 
