@@ -1316,9 +1316,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1909947720}
-  - {fileID: 1737874034}
   - {fileID: 835291417}
   - {fileID: 639198104}
+  - {fileID: 1737874034}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &572091831
@@ -1383,7 +1383,7 @@ MonoBehaviour:
   lvl3: {fileID: 1516380713}
   lvl2: {fileID: 694410910}
   lvl4: {fileID: 1154081547}
-  scriptplayer: {fileID: 0}
+  scriptplayer: {fileID: 1752928941}
 --- !u!61 &572091834
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3085,6 +3085,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: 15
+  soundtrack: {fileID: 1737874033}
 --- !u!82 &694272345
 AudioSource:
   m_ObjectHideFlags: 0
@@ -7388,7 +7389,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1516380714
 Transform:
   m_ObjectHideFlags: 0
@@ -7861,6 +7862,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 552856915}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1752928941 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5115465585184856390, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
+  m_PrefabInstance: {fileID: 5915835327639461111}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda372d2dde973f4e9a51f83822844ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1760105027
 GameObject:
   m_ObjectHideFlags: 0
@@ -8999,6 +9011,10 @@ PrefabInstance:
       value: player
       objectReference: {fileID: 0}
     - target: {fileID: 5115465585184856390, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
+      propertyPath: speedjump
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5115465585184856390, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
       propertyPath: xnegativo
       value: -8.88
       objectReference: {fileID: 0}
@@ -9013,6 +9029,14 @@ PrefabInstance:
     - target: {fileID: 5115465585184856390, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
       propertyPath: ypositivo
       value: 4.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 5922683804932181347, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5922683804932181347, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
+      propertyPath: m_GravityScale
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

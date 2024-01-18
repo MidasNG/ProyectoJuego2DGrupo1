@@ -9,7 +9,8 @@ public class TimerApagón : MonoBehaviour
     public float timer = 15;
     private TextMeshProUGUI textoTimer;
     private AudioSource loser;
-
+    private bool gameover=false;
+    public AudioSource soundtrack;
 
     void Start()
     {
@@ -26,19 +27,22 @@ public class TimerApagón : MonoBehaviour
 
             textoTimer.text = "Tiempo: " + timer.ToString("f0");
         }
-        else if (timer < 1)
+        else if (timer < 1 && !gameover)
         {
-            StartCoroutine(gameover());
+            StartCoroutine(GameOver());
+            gameover = true;
            
         }
 
     }
 
-    public IEnumerator gameover()
+    public IEnumerator GameOver()
     {
+        Destroy(soundtrack);
+
         loser.Play();
 
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(2f);
 
         SceneManager.LoadSceneAsync("Menu minijuegos");
 

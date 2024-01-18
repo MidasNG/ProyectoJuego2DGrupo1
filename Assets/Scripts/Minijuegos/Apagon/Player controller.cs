@@ -36,8 +36,7 @@ public class Playercontroller : MonoBehaviour
 
             if (Input.GetButtonDown("Jump") && valuejumps > 0)
             {
-                rb.AddForce(new Vector2(0, speedjump), ForceMode2D.Impulse);
-
+                rb.velocity = new Vector2( speedjump, speedjump);
                 valuejumps--;
                 jumpaudio.Play();
 

@@ -1115,7 +1115,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.45, y: 4}
+  m_Size: {x: 8.19, y: 4}
   m_EdgeRadius: 0.1
 --- !u!212 &226919416
 SpriteRenderer:
@@ -2005,7 +2005,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c4a2331779c4f44ba975eb53d588ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivelrandom: 0
 --- !u!1 &387617433
 GameObject:
   m_ObjectHideFlags: 0
@@ -6889,7 +6888,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 1, g: 0, b: 0.018810749, a: 1}
   m_FlipX: 0
@@ -7863,9 +7862,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 350405739}
-        m_TargetAssemblyTypeName: opcionesinterfaz, Assembly-CSharp
-        m_MethodName: volver
+      - m_Target: {fileID: 226919414}
+        m_TargetAssemblyTypeName: modocontroles, Assembly-CSharp
+        m_MethodName: regresar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8464,7 +8463,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5115465585184856390, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
       propertyPath: speedjump
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5115465585184856390, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
       propertyPath: xnegativo
@@ -8481,6 +8480,14 @@ PrefabInstance:
     - target: {fileID: 5115465585184856390, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
       propertyPath: ypositivo
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5922683804932181347, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
+      propertyPath: m_Mass
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5922683804932181347, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
+      propertyPath: m_GravityScale
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7888331335916998210, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
       propertyPath: m_SortingOrder

@@ -43,6 +43,8 @@ public class Encender : MonoBehaviour
 
         lvl = Random.Range(1,5);
 
+        StartCoroutine(bloqueo());
+
 
         if (lvl == 1)
         {
@@ -59,7 +61,7 @@ public class Encender : MonoBehaviour
         else if (lvl == 3)
         {
             lvl3.SetActive(true);
-            transform.position = new Vector2(-0.3f,5.8f);
+            transform.position = new Vector2(5.71f, 5.84f);
         }
 
         else if (lvl == 4)
@@ -95,8 +97,7 @@ public class Encender : MonoBehaviour
 
             StartCoroutine(cambiolvl());
 
-         
-
+          
         }
        
 
@@ -108,5 +109,14 @@ public class Encender : MonoBehaviour
 
             SceneManager.LoadSceneAsync("Menu minijuegos");
 
+    }
+
+    public IEnumerator bloqueo()
+    {
+        scriptplayer.enabled = false;
+
+        yield return new WaitForSeconds(3f);
+
+        scriptplayer.enabled = true;
     }
 }
