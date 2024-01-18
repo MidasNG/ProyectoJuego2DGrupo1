@@ -9,6 +9,7 @@ public class TruckSpawner : MonoBehaviour
     [SerializeField] private Notification miss, correct, incorrect;
     [SerializeField] private TruckGameController game;
     [SerializeField] private GameObject badTruck, goodTruck;
+    [SerializeField] private TruckAudioController audioSource;
     private GameObject lastTruckInstance;
     private TruckBehaviour lastTruckScript;
     private int truckType = 0;
@@ -22,7 +23,7 @@ public class TruckSpawner : MonoBehaviour
             if (truckType == 0 ) lastTruckInstance = Instantiate(badTruck, new Vector3(transform.position.x, -10, transform.position.z), Quaternion.identity, gameObject.transform);
             else lastTruckInstance = Instantiate(goodTruck, new Vector3(transform.position.x, -10, transform.position.z), Quaternion.identity, gameObject.transform);
             lastTruckScript = lastTruckInstance.GetComponent<TruckBehaviour>();
-            lastTruckScript.Setup(game, miss, correct, incorrect);
+            lastTruckScript.Setup(game, miss, correct, incorrect, audioSource);
             timeSinceLastTruck = 0;
         }
         timeSinceLastTruck += Time.deltaTime;

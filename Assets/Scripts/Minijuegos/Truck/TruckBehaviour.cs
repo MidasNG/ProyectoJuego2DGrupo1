@@ -11,6 +11,7 @@ public class TruckBehaviour : MonoBehaviour
     [SerializeField] private bool badTruck;
     private SpriteRenderer spriteRenderer;
     private Notification miss, correct, incorrect;
+    private TruckAudioController audioSource;
     private bool approveable = false, vanish = false;
     private float pointA = 0, t, vanishT = 0, pointB = 10, speed = 4;
 
@@ -73,11 +74,13 @@ public class TruckBehaviour : MonoBehaviour
         {
             ScoreManager.instance.RemovePointTruck();
             incorrect.TriggerNotif();
+            audioSource.IncorrectSound();
         }
         else
         {
             ScoreManager.instance.AddPointTruck();
             correct.TriggerNotif();
+            audioSource.CorrectSound();
         }
         vanishT = 0;
         while (spriteRenderer.color.a > 0)
@@ -91,28 +94,22 @@ public class TruckBehaviour : MonoBehaviour
 
     private void VanishMiss()
     {
-        if (badTruck)
+        if (badTruck && Time.timeScale == 1)
         {
-            if (game != null)
-            {
-                ScoreManager.instance.RemovePointTruck();
-            }
-
-            if (miss != null)
-            {
-                miss.TriggerNotif();
-            }
-
+            ScoreManager.instance.RemovePointTruck();
+            miss.TriggerNotif();
+            audioSource.MissSound();
             Destroy(gameObject);
         }
     }
 
     //Asociar los elementos necesarios desde el spawner
-    public void Setup(TruckGameController game, Notification miss, Notification correct, Notification incorrect)
+    public void Setup(TruckGameController game, Notification miss, Notification correct, Notification incorrect, TruckAudioController audioSource)
     {
         this.game = game;
         this.miss = miss;
         this.correct = correct;
         this.incorrect = incorrect;
+        this.audioSource = audioSource;
     }
 }
