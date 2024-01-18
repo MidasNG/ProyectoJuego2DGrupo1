@@ -26,8 +26,8 @@ public class opcionesinterfaz : MonoBehaviour
     }
     public void volver()
     {
-        SceneManager.LoadScene("Menu principal");
         Time.timeScale = 1;
+        StartCoroutine(volverRoutine());
     }
 
     public void minijuego1()
@@ -58,9 +58,14 @@ public class opcionesinterfaz : MonoBehaviour
 
     public void pantallaMinijuegos()
     {
-        SceneManager.LoadScene("Menu minijuegos");
+        StartCoroutine(pantallaMinijuegosRoutine());
     }
 
+    IEnumerator volverRoutine() 
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Menu principal");
+    }
 
     IEnumerator minijuegoApagon()
     {
@@ -91,5 +96,11 @@ public class opcionesinterfaz : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         SceneManager.LoadScene("Carga trash");
+    }
+
+    IEnumerator pantallaMinijuegosRoutine()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Menu minijuegos");
     }
 }
