@@ -89,12 +89,14 @@ public class ScoreManager : MonoBehaviour
 
     public void RemovePointRhythm()
     {
+        comboRhythm = 0;
         scoreRhythm -= 10;
         scoreTextRhythm.text = "Puntos: " + scoreRhythm.ToString();
     }
 
     public void RemovePointRhythm2()
     {
+        comboRhythm = 0;
         scoreRhythm -= 5;
         scoreTextRhythm.text = "Puntos: " + scoreRhythm.ToString();
     }
