@@ -20,7 +20,7 @@ public class HeartsGenerator : MonoBehaviour
 
             stop = false;
 
-            yield return new WaitForSeconds(20f);
+            yield return new WaitForSeconds(19f);
 
             stop = true;
     }

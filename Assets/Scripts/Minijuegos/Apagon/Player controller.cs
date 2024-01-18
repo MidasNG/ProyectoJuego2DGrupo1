@@ -19,6 +19,7 @@ public class Playercontroller : MonoBehaviour
     public float ypositivo;
     public float ynegativo;
 
+    private bool withController = false;
 
     void Start()
     {
@@ -31,6 +32,10 @@ public class Playercontroller : MonoBehaviour
 
     void Update()
     {
+
+        float joystick = Input.GetAxisRaw("JoystickHorizontal");
+        float keyboard = Input.GetAxisRaw("Horizontal");
+
         if (Time.timeScale == 1)
         {
 
@@ -50,20 +55,41 @@ public class Playercontroller : MonoBehaviour
                 valuejumps = jumps;
             }
 
-            rb.velocity = new Vector2(speedrun * Input.GetAxisRaw("Horizontal"), rb.velocity.y);
-
-            controller.SetBool("run", Input.GetAxisRaw("Horizontal") != 0);
-
-
-            if (Input.GetAxisRaw("Horizontal") > 0)
+            if (joystick != 0)
             {
-                giro.flipX = false;
-            }
-            else if (Input.GetAxisRaw("Horizontal") < 0)
-            {
-                giro.flipX = true;
-            }
+                withController = true;
+            } else { withController = false; }
 
+            if (withController == false)
+            {
+                rb.velocity = new Vector2(speedrun * Input.GetAxisRaw("Horizontal"), rb.velocity.y);
+
+                controller.SetBool("run", Input.GetAxisRaw("Horizontal") != 0);
+
+                if (Input.GetAxisRaw("Horizontal") > 0)
+                {
+                    giro.flipX = false;
+                }
+                else if (Input.GetAxisRaw("Horizontal") < 0)
+                {
+                    giro.flipX = true;
+                }
+            } else
+            {
+                rb.velocity = new Vector2(speedrun * Input.GetAxisRaw("JoystickHorizontal"), rb.velocity.y);
+
+                controller.SetBool("run", Input.GetAxisRaw("JoystickHorizontal") != 0);
+
+                if (Input.GetAxisRaw("JoystickHorizontal") > 0)
+                {
+                    giro.flipX = false;
+                }
+                else if (Input.GetAxisRaw("JoystickHorizontal") < 0)
+                {
+                    giro.flipX = true;
+                }
+            }
+           
 
             transform.position = new Vector2(Mathf.Clamp((transform.position.x), xnegativo, xpositivo), Mathf.Clamp((transform.position.y), ynegativo, ypositivo));
         }

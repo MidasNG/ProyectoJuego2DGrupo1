@@ -9,29 +9,26 @@ public class MovSubmarino : MonoBehaviour
     public float velocidad = 3;
     public float value = 6;
 
-//    void Update()
-//    {
-//        Vector2 inputVector = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+    private bool withController = false;
 
-//        if (inputVector.magnitude > 1)
-//        {
-//            inputVector.Normalize();
-//        }
+    void Update()
+    {
+        float movHorizontal = Input.GetAxis("Horizontal");
+        float movVertical = Input.GetAxis("Vertical");
+        float joystickHorizontal = Input.GetAxisRaw("JoystickHorizontal");
+        float joystickVertical = Input.GetAxisRaw("JoystickVertical");
 
-//        Vector2 movementVector = inputVector * Time.deltaTime * velocidad;
-
-//        transform.position = new Vector2(Mathf.Clamp(transform.position.x + movementVector.x, -11, 41), (Mathf.Clamp(transform.position.y + movementVector.y, 1.5f, -73)));
-
-//    }
-
-//}
-
-        void Update()
+        if (joystickHorizontal != 0 || joystickVertical != 0)
         {
-            float movHorizontal = Input.GetAxis("Horizontal");
+            withController = true;
+        }
+        else { withController = false; }
+
+        if (withController == false)
+        {
             transform.Translate(Vector2.right * movHorizontal * velocidad * Time.deltaTime);
 
-            float movVertical = Input.GetAxis("Vertical");
+
             transform.Translate(Vector2.up * movVertical * velocidad * Time.deltaTime);
 
 
@@ -43,5 +40,25 @@ public class MovSubmarino : MonoBehaviour
             {
                 sprite.flipX = true;
             }
+        }
+            else
+        {
+            transform.Translate(Vector2.right * joystickHorizontal * velocidad * Time.deltaTime);
+
+
+            transform.Translate(Vector2.up * joystickVertical * velocidad * Time.deltaTime);
+
+
+            if (joystickHorizontal > 0)
+            {
+                sprite.flipX = false;
+            }
+            else if (joystickHorizontal < 0)
+            {
+                sprite.flipX = true;
+            }
+         }
+
     }
 }
+

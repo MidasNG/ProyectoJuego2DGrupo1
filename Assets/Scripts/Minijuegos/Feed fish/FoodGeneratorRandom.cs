@@ -13,7 +13,7 @@ public class FoodGeneratorRandom : MonoBehaviour
     void Update()
     {
         // Generar comida si se puede y se presiona la barra espaciadora
-        if (puedeGenerar && Input.GetKeyDown(KeyCode.Space))
+        if (puedeGenerar && Input.GetKeyDown(KeyCode.Space) || puedeGenerar && Input.GetButton("Jump"))
         {
             if (Random.value < probabilidadGeneracion)
             {
