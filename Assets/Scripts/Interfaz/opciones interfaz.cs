@@ -5,7 +5,25 @@ using UnityEngine.SceneManagement;
 
 public class opcionesinterfaz : MonoBehaviour
 {
+    string escenaActual;
 
+    private void Start()
+    {
+        escenaActual = SceneManager.GetActiveScene().name;
+    }
+    
+    public void Update()
+    {
+        if (Input.GetAxisRaw("Cancel") > 0 && escenaActual == "Carga Apagón" || Input.GetAxisRaw("Cancel") > 0 && escenaActual == "Carga Truck" || Input.GetAxisRaw("Cancel") > 0 && escenaActual == "Carga Ritmo" || Input.GetAxisRaw("Cancel") > 0 && escenaActual == "Carga Feed fish" || Input.GetAxisRaw("Cancel") > 0 && escenaActual == "Carga trash")
+        {
+            pantallaMinijuegos();
+        }
+
+        if (Input.GetAxisRaw("Cancel") > 0 && escenaActual == "Menu minijuegos")
+        {
+            volver();
+        }
+    }
     public void volver()
     {
         SceneManager.LoadScene("Menu principal");
