@@ -26,15 +26,16 @@ public class GameManager : MonoBehaviour
     public void Start()
     {
         instance = this;
-        // Agrega todas las escenas de minijuegos a la lista al inicio del juego
-        for (int i = 0; i < SceneManager.sceneCount; i++)
-        {
-            Scene scene = SceneManager.GetSceneAt(i);
-            if (scene.name != "Menu historia" && scene.name != creditsScene && !scene.name.StartsWith("Instrucciones_"))
-            {
-                minigameScenes.Add(scene.name);
-            }
-        }
+       // // Agrega todas las escenas de minijuegos a la lista al inicio del juego
+       // //print(SceneManager.sceneCount);
+       ////     for (int i = 0; i < SceneManager.sceneCount; i++)
+       // {
+       //     Scene scene = SceneManager.GetSceneAt(i);
+       //     if (scene.name != "Menu historia" && scene.name != creditsScene && !scene.name.StartsWith("Instrucciones_"))
+       //     {
+       //         minigameScenes.Add(scene.name);
+       //     }
+       // }
 
         // Comienza el primer minijuego
         StartCoroutine(StartNextMinigame());
