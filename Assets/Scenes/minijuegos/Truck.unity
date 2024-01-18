@@ -1336,7 +1336,8 @@ MonoBehaviour:
   correct: {fileID: 1201377145}
   incorrect: {fileID: 522742923}
   game: {fileID: 44737268}
-  truck: {fileID: 1187223976448487510, guid: 1914607f3e6fad2408d57539cb2296dd, type: 3}
+  badTruck: {fileID: 1187223976448487510, guid: 1914607f3e6fad2408d57539cb2296dd, type: 3}
+  goodTruck: {fileID: 1187223976448487510, guid: 4c509f24da54e924b9d3ece43875fdd1, type: 3}
 --- !u!4 &1190056876
 Transform:
   m_ObjectHideFlags: 0
@@ -1704,7 +1705,8 @@ MonoBehaviour:
   correct: {fileID: 1640200266}
   incorrect: {fileID: 47502479}
   game: {fileID: 44737268}
-  truck: {fileID: 1187223976448487510, guid: 1914607f3e6fad2408d57539cb2296dd, type: 3}
+  badTruck: {fileID: 1187223976448487510, guid: 1914607f3e6fad2408d57539cb2296dd, type: 3}
+  goodTruck: {fileID: 1187223976448487510, guid: 4c509f24da54e924b9d3ece43875fdd1, type: 3}
 --- !u!4 &1596890076
 Transform:
   m_ObjectHideFlags: 0
