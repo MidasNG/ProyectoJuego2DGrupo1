@@ -103,7 +103,7 @@ public class ScoreManager : MonoBehaviour
 
     public void AddPointApagon()
     {
-        if (contadorApagon >= 10 && contadorApagon < 16)
+        if (contadorApagon >= 10 && contadorApagon < 20)
         {
             scoreApagon = 100;
             scoreTextApagon.text = "Puntos: " + scoreApagon.ToString();
