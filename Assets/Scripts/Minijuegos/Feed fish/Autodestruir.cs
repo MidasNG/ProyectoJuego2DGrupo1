@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Autodestruir : MonoBehaviour
 {
-    public float tiempoVida = 0.5f;
+    [SerializeField] private float tiempoVida;
 
     void Start()
     {

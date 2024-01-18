@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CerrarControles : MonoBehaviour
 {
-    public modocontroles cerrar;
+    [SerializeField] private modocontroles cerrar;
     void Update()
     {
         if (Input.GetButtonDown("Cancel"))

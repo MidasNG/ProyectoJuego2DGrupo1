@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 
 public class modocontroles : MonoBehaviour
 {
-    public GameObject aviso;
-    public GameObject controles;
-    public GameObject cartel;
+    [SerializeField] private GameObject aviso;
+    [SerializeField] private GameObject controles;
+    [SerializeField] private GameObject cartel;
+    [SerializeField] private GameObject teclado;
+    [SerializeField] private GameObject mando;
     private bool colider = false;
-    public GameObject teclado;
-    public GameObject mando;
 
 
     void Start()

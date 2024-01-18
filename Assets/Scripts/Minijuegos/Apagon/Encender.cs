@@ -7,24 +7,24 @@ using UnityEngine.UIElements;
 public class Encender : MonoBehaviour
 {
 
-    public GameObject dark;
-    public GameObject dark2;
-    public GameObject verde;
-    public GameObject verdefondo;
-    public Animator palanca;
-    public Animator lightup;
-    public GameObject night;
+    [SerializeField] private GameObject dark;
+    [SerializeField] private GameObject dark2;
+    [SerializeField] private GameObject verde;
+    [SerializeField] private GameObject verdefondo;
+    [SerializeField] private Animator palanca;
+    [SerializeField] private Animator lightup;
+    [SerializeField] private GameObject night;
     private AudioSource audiopalanca;
-    public AudioSource audiovictory;
-    public AudioSource audiovictory2;
-    public AudioSource soundtrack;
+    [SerializeField] private AudioSource audiovictory;
+    [SerializeField] private AudioSource audiovictory2;
+    [SerializeField] private AudioSource soundtrack;
     private BoxCollider2D box;
     private int lvl;
-    public GameObject lvl1;
-    public GameObject lvl3;
-    public GameObject lvl2;
-    public GameObject lvl4;
-    public Playercontroller scriptplayer;
+    [SerializeField] private GameObject lvl1;
+    [SerializeField] private GameObject lvl3;
+    [SerializeField] private GameObject lvl2;
+    [SerializeField] private GameObject lvl4;
+    [SerializeField] private Playercontroller scriptplayer;
 
     // Start is called before the first frame update
     void Start()

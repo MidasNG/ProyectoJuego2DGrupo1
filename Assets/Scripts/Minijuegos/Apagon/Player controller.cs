@@ -8,16 +8,16 @@ public class Playercontroller : MonoBehaviour
     private Animator controller;
     private Rigidbody2D rb;
     private SpriteRenderer giro;
-    public float speedrun;
-    public float speedjump;
+    [SerializeField] private float speedrun;
+    [SerializeField] private float speedjump;
     private bool ground = true;
     private int jumps = 1;
     private int valuejumps;
     private AudioSource jumpaudio;
-    public float xpositivo;
-    public float xnegativo;
-    public float ypositivo;
-    public float ynegativo;
+    [SerializeField] private float xpositivo;
+    [SerializeField] private float xnegativo;
+    [SerializeField] private float ypositivo;
+    [SerializeField] private float ynegativo;
 
     private bool withController = false;
 

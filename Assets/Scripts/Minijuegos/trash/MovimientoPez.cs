@@ -51,12 +51,17 @@ public class MovimientoPez : MonoBehaviour
     //}
 
     
-    public float distancia;
-    public float velocidad;
+    [SerializeField] private float distancia;
+    [SerializeField] private float velocidad;
 
-    public SpriteRenderer sprite;
+    private SpriteRenderer sprite;
 
     private bool moviendoseHaciaDerecha = true;
+
+    private void Start()
+    {
+        sprite = GetComponent<SpriteRenderer>();
+    }
 
     void Update()
     {

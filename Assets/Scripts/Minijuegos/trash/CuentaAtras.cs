@@ -7,8 +7,8 @@ using TMPro;
 
 public class CuentaAtras : MonoBehaviour
 {
-    public TextMeshProUGUI countdownText;
-    public float countdownTime = 30f; // Tiempo inicial para la cuenta atrás
+    [SerializeField] private TextMeshProUGUI countdownText;
+    [SerializeField] private float countdownTime = 30f; // Tiempo inicial para la cuenta atrás
 
     void Start()
     {
@@ -34,7 +34,7 @@ public class CuentaAtras : MonoBehaviour
         ChangeScene();
     }
 
-    void ChangeScene()
+    private void ChangeScene()
     {
         SceneManager.LoadScene("Menu minijuegos");
     }

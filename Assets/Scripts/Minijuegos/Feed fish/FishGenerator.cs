@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class FishGenerator : MonoBehaviour
 {
-    public GameObject pezPrefab; // Prefab del pez
-    public float velocidad = 2.0f; // Velocidad del pez
-    public float limiteIzquierdo = -5.0f; // Límite izquierdo
-    public float limiteDerecho = 5.0f; // Límite derecho
-    public float alturaMaxima = 5.0f; // Altura máxima en el eje Y
-    public float alturaMinima = -5.0f; // Altura mínima en el eje Y
-    public bool moverHaciaDerecha = true; // Dirección de movimiento
-    public float intervaloGeneracion = 2.0f; // Intervalo de generación en segundos
-    public float tamanoMinimo = 0.5f; // Tamaño mínimo del pez
-    public float tamanoMaximo = 2.0f; // Tamaño máximo del pez
+    [SerializeField] private GameObject pezPrefab; // Prefab del pez
+    [SerializeField] private float velocidad = 2.0f; // Velocidad del pez
+    [SerializeField] private float limiteIzquierdo = -5.0f; // Límite izquierdo
+    [SerializeField] private float limiteDerecho = 5.0f; // Límite derecho
+    [SerializeField] private float alturaMaxima = 5.0f; // Altura máxima en el eje Y
+    [SerializeField] private float alturaMinima = -5.0f; // Altura mínima en el eje Y
+    [SerializeField] private bool moverHaciaDerecha = true; // Dirección de movimiento
+    [SerializeField] private float intervaloGeneracion = 2.0f; // Intervalo de generación en segundos
+    [SerializeField] private float tamanoMinimo = 0.5f; // Tamaño mínimo del pez
+    [SerializeField] private float tamanoMaximo = 2.0f; // Tamaño máximo del pez
 
     void Start()
     {

@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    public List<string> minigameScenes = new List<string>();
-    public string creditsScene;
+    [SerializeField] private List<string> minigameScenes = new List<string>();
+    [SerializeField] private string creditsScene;
     public static GameManager instance;
 
     private void Awake()

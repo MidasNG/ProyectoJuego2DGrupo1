@@ -5,7 +5,7 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float timer = 20;
+    [SerializeField] private float timer;
     private TextMeshProUGUI textoTimer;
     
 

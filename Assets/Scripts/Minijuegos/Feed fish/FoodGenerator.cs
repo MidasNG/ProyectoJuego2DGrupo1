@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class FoodGenerator : MonoBehaviour
 {
-    public GameObject comidaPrefab; // Prefab de la comida
-    public float tiempoEsperaEntreGeneraciones = 2.0f; // Tiempo de espera entre generaciones
-    public float tiempoVidaComida = 5.0f; // Tiempo de vida de la comida
-    public AudioSource audioSource; // Referencia al componente AudioSource
+    [SerializeField] private GameObject comidaPrefab; // Prefab de la comida
+    [SerializeField] private float tiempoEsperaEntreGeneraciones = 2.0f; // Tiempo de espera entre generaciones
+    [SerializeField] private float tiempoVidaComida = 5.0f; // Tiempo de vida de la comida
+    [SerializeField] private AudioSource audioSource; // Referencia al componente AudioSource
 
     private bool puedeGenerar = true;
 

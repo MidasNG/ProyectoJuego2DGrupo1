@@ -4,12 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class LevelManager : MonoBehaviour
 {
-    public string nombreDeLaSiguienteEscena = "NombreDeTuSiguienteEscena"; // Reemplaza con el nombre de tu siguiente escena
-    public float tiempoAntesDeCambiarEscena = 20.0f; // Tiempo antes de cambiar a la siguiente escena
-    public float tiempoEsperaDespuesDeMusica = 5.0f; // Tiempo de espera después de la música antes de cambiar la escena
-    public AudioSource audioSourceOriginal; // Asigna el componente AudioSource de la música original desde el Inspector
-    public AudioSource audioSourceVictoria; // Asigna el componente AudioSource de la música de victoria desde el Inspector
-    public GameObject animObject; // Arrastra el objeto que contiene el Animator desde el Inspector
+    [SerializeField] private string nombreDeLaSiguienteEscena; // Reemplaza con el nombre de tu siguiente escena
+    [SerializeField] private float tiempoAntesDeCambiarEscena; // Tiempo antes de cambiar a la siguiente escena
+    [SerializeField] private float tiempoEsperaDespuesDeMusica; // Tiempo de espera después de la música antes de cambiar la escena
+    [SerializeField] private AudioSource audioSourceOriginal; // Asigna el componente AudioSource de la música original desde el Inspector
+    [SerializeField] private AudioSource audioSourceVictoria; // Asigna el componente AudioSource de la música de victoria desde el Inspector
+    [SerializeField] private GameObject animObject; // Arrastra el objeto que contiene el Animator desde el Inspector
 
     void Start()
     {

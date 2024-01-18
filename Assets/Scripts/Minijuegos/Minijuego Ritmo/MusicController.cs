@@ -5,10 +5,10 @@ using UnityEngine;
 public class MusicController : MonoBehaviour
 {
     private AudioSource introMusic;
-    public AudioSource firstSound;
-    public AudioSource secondSound;
-    public AudioClip firstClip;
-    public AudioClip secondClip;
+    [SerializeField] private AudioSource firstSound;
+    [SerializeField] private AudioSource secondSound;
+    [SerializeField] private AudioClip firstClip;
+    [SerializeField] private AudioClip secondClip;
 
     private int loop = 0;
 
@@ -16,8 +16,6 @@ public class MusicController : MonoBehaviour
     IEnumerator Start()
     {
         introMusic = GetComponent<AudioSource>();
-        firstSound = GetComponent<AudioSource>();
-        secondSound = GetComponent<AudioSource>();
 
         firstSound.Pause();
         secondSound.Pause();

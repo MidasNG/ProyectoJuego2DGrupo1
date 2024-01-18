@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class FoodGeneratorRandom : MonoBehaviour
 {
-    public GameObject comidaPrefab; // Prefab de la comida
-    public float probabilidadGeneracion = 0.5f; // Probabilidad de generación de comida
-    public float tiempoEsperaEntreGeneraciones = 2.0f; // Tiempo de espera entre generaciones
-    public float tiempoVidaComida = 5.0f; // Tiempo de vida de la comida
+    [SerializeField] private GameObject comidaPrefab; // Prefab de la comida
+    [SerializeField] private float probabilidadGeneracion; // Probabilidad de generación de comida
+    [SerializeField] private float tiempoEsperaEntreGeneraciones; // Tiempo de espera entre generaciones
+    [SerializeField] private float tiempoVidaComida; // Tiempo de vida de la comida
 
     private bool puedeGenerar = true;
 

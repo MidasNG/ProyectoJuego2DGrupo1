@@ -4,12 +4,17 @@ using UnityEngine;
 
 public class MovSubmarino : MonoBehaviour
 {
-    public SpriteRenderer sprite;
+    private SpriteRenderer sprite;
 
-    public float velocidad = 3;
-    public float value = 6;
+    [SerializeField] private float velocidad;
+    //private float value = 6;
 
     private bool withController = false;
+
+    private void Start()
+    {
+        sprite = GetComponent<SpriteRenderer>();
+    }
 
     void Update()
     {

@@ -6,8 +6,8 @@ using UnityEngine;
 
 public class HeartsGenerator : MonoBehaviour
 {
-    public Transform target;
-    public GameObject[] arrayPrefabHearts = new GameObject[2];
+    [SerializeField] private Transform target;
+    [SerializeField] private GameObject[] arrayPrefabHearts = new GameObject[2];
     private float tiempoEntreCorazones;
     private float comienzoDeTiempo;
     private bool stop = false;

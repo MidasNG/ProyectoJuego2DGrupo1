@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class modopuntuacion : MonoBehaviour
 {
-    public GameObject aviso;
+    [SerializeField] private GameObject aviso;
     private bool colider = false;
 
     void Start()

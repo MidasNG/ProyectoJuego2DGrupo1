@@ -7,7 +7,7 @@ using UnityEngine;
 
 public class InteractiveHeartGreen : MonoBehaviour
 {
-    public float inicialSpeed;
+    [SerializeField] private float inicialSpeed;
     private bool dentro = false;
     private int contador = 0;
     private float interact;

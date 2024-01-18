@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 
 public class Basuras : MonoBehaviour
 {
+    [SerializeField] private AudioSource win;
     private AudioSource clip;
     private SpriteRenderer render;
     private CircleCollider2D colisionador;
-    public AudioSource win;
-
-    public static int score = 0;
+    private Coroutine finishRoutine;
+    private static int score = 0;
 
     void Start()
     {
@@ -23,10 +23,10 @@ public class Basuras : MonoBehaviour
 
     private void Update()
     {
-        if (score == 10) 
+        if (score == 10 && finishRoutine == null) 
         { 
             win.Play();
-            StartCoroutine(FinishGame());
+            finishRoutine = StartCoroutine(FinishGame());
         }
     }
 
@@ -46,7 +46,6 @@ public class Basuras : MonoBehaviour
 
     IEnumerator FinishGame()
     {
-        win = GetComponent<AudioSource>();
         win.Play();
         yield return new WaitForSeconds(2f);
         SceneManager.LoadScene("Menu minijuegos");

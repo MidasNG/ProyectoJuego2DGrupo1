@@ -11,17 +11,17 @@ public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager instance;
 
-    public TextMeshProUGUI scoreTextRhythm;
-    public TextMeshProUGUI scoreTextApagon;
-    public TextMeshProUGUI scoreTextTruck;
-    public TextMeshProUGUI scoreTextTrash;
-    public TextMeshProUGUI scoreTextFeed;
+    [SerializeField] private TextMeshProUGUI scoreTextRhythm;
+    [SerializeField] private TextMeshProUGUI scoreTextApagon;
+    [SerializeField] private TextMeshProUGUI scoreTextTruck;
+    [SerializeField] private TextMeshProUGUI scoreTextTrash;
+    [SerializeField] private TextMeshProUGUI scoreTextFeed;
 
-    public TextMeshProUGUI highscoreTextRhythm;
-    public TextMeshProUGUI highscoreTextApagon;
-    public TextMeshProUGUI highscoreTextTruck;
-    public TextMeshProUGUI highscoreTextTrash;
-    public TextMeshProUGUI highscoreTextFeed;
+    [SerializeField] private TextMeshProUGUI highscoreTextRhythm;
+    [SerializeField] private TextMeshProUGUI highscoreTextApagon;
+    [SerializeField] private TextMeshProUGUI highscoreTextTruck;
+    [SerializeField] private TextMeshProUGUI highscoreTextTrash;
+    [SerializeField] private TextMeshProUGUI highscoreTextFeed;
 
     int scoreRhythm = 0;
     int highscoreRhythm = 0;

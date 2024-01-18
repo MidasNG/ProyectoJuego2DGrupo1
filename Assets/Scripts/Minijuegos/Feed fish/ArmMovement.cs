@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class ArmMovement : MonoBehaviour
 {
-    public float velocidadMovimiento = 1.0f; // Velocidad ajustable desde el Inspector
-    public float limiteIzquierdo = -1.0f; // Límite izquierdo
-    public float limiteDerecho = 1.0f; // Límite derecho
+    [SerializeField] private float velocidadMovimiento; // Velocidad ajustable desde el Inspector
+    [SerializeField] private float limiteIzquierdo; // Límite izquierdo
+    [SerializeField] private float limiteDerecho; // Límite derecho
 
-    public Sprite manoCerradaSprite;
-    public Sprite manoAbiertaSprite;
+    [SerializeField] private Sprite manoCerradaSprite;
+    [SerializeField] private Sprite manoAbiertaSprite;
 
     private SpriteRenderer spriteRenderer;
     private bool puedePulsarSpace = true;

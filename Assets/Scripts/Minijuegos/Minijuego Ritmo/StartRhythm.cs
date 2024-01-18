@@ -6,8 +6,8 @@ using System.Runtime.CompilerServices;
 
 public class StartRhythm : MonoBehaviour
 {
-    public TextMeshProUGUI textoCuentaAtras;
-    public float duracionCuentaAtras = 3f;
+    [SerializeField] private TextMeshProUGUI textoCuentaAtras;
+    [SerializeField] private float duracionCuentaAtras;
 
 
     private void Start()

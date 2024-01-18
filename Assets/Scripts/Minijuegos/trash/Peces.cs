@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Peces : MonoBehaviour
 {
-    public AudioSource clipPez;
+    private AudioSource clipPez;
     private SpriteRenderer render;
     private BoxCollider2D colisionador;
 

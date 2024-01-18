@@ -6,11 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class TimerApagón : MonoBehaviour
 {
-    public float timer = 15;
+    [SerializeField] private float timer;
     private TextMeshProUGUI textoTimer;
     private AudioSource loser;
     private bool gameover=false;
-    public AudioSource soundtrack;
+    [SerializeField] private AudioSource soundtrack;
 
     void Start()
     {

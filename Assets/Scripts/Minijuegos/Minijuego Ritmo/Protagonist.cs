@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Protagonist : MonoBehaviour
 {
-    public float speed;
+    [SerializeField] private float speed;
     private Rigidbody2D rb2d;
     private Animator finalAnimation;
     private bool final;

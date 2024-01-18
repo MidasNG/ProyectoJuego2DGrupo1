@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class FoodCollision : MonoBehaviour
 {
-    public GameObject puntuacionPrefab; // Agrega el prefab de puntuación desde el Inspector
+    [SerializeField] private GameObject puntuacionPrefab; // Agrega el prefab de puntuación desde el Inspector
 
     private AudioSource audioSource; // Variable para el AudioSource
 

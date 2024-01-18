@@ -1815,9 +1815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42a9902dad8827843b548dea86437b9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 463023173}
   velocidad: 13
-  value: 6
 --- !u!61 &463023178
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2486,7 +2484,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e689e3e1fc7d36645915d10983b06d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipPez: {fileID: 689632241}
 --- !u!61 &689632245
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2546,7 +2543,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distancia: 20
   velocidad: 25
-  sprite: {fileID: 689632239}
 --- !u!1 &891626571
 GameObject:
   m_ObjectHideFlags: 0
@@ -3624,7 +3620,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e689e3e1fc7d36645915d10983b06d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipPez: {fileID: 1259286848}
 --- !u!61 &1259286852
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3684,7 +3679,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distancia: 20
   velocidad: 10
-  sprite: {fileID: 1259286846}
 --- !u!1 &1286344917
 GameObject:
   m_ObjectHideFlags: 0
@@ -4268,7 +4262,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e689e3e1fc7d36645915d10983b06d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipPez: {fileID: 1394215880}
 --- !u!61 &1394215884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4328,7 +4321,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distancia: 20
   velocidad: 20
-  sprite: {fileID: 1394215878}
 --- !u!1 &1421043210
 GameObject:
   m_ObjectHideFlags: 0
@@ -5673,7 +5665,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 730, y: 432}
-  m_SizeDelta: {x: 320.5, y: 50}
+  m_SizeDelta: {x: 355.4, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1882242652
 MonoBehaviour:
@@ -6124,7 +6116,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e689e3e1fc7d36645915d10983b06d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipPez: {fileID: 1925230781}
 --- !u!61 &1925230785
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6184,7 +6175,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distancia: 20
   velocidad: 8
-  sprite: {fileID: 1925230779}
 --- !u!1 &1941781887
 GameObject:
   m_ObjectHideFlags: 0
@@ -6669,7 +6659,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e689e3e1fc7d36645915d10983b06d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clipPez: {fileID: 2122616695}
 --- !u!61 &2122616699
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6729,7 +6718,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   distancia: 20
   velocidad: 15
-  sprite: {fileID: 2122616693}
 --- !u!4 &307130002676708891
 Transform:
   m_ObjectHideFlags: 0

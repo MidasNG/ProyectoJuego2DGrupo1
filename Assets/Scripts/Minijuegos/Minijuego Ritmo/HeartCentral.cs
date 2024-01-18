@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HeartCentral : MonoBehaviour
 {
-    public Transform target;
+    [SerializeField] private Transform target;
     private Animator animator;
     private int contadorRed = 0;
     private bool dentroRed = false;

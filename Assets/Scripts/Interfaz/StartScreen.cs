@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class PantallaInicio : MonoBehaviour
 {
-    public float tiempoEspera = 5f; // Tiempo de espera en segundos
-    public string nombreDeLaSiguienteEscena; // Nombre de la siguiente escena
+    [SerializeField] private float tiempoEspera; // Tiempo de espera en segundos
+    [SerializeField] private string nombreDeLaSiguienteEscena; // Nombre de la siguiente escena
 
     private bool permitirCambioDeEscena = false;
 

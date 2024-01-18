@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class AutoSpeedController : MonoBehaviour
 {
-    public float intervaloAceleracion = 10.0f; // Intervalo de tiempo entre aceleraciones
-    public float factorAceleracion = 2.0f; // Factor de aceleración
+    [SerializeField] private float intervaloAceleracion; // Intervalo de tiempo entre aceleraciones
+    [SerializeField] private float factorAceleracion; // Factor de aceleración
 
     private void Start()
     {

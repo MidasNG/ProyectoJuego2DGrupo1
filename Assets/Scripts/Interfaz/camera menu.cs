@@ -4,14 +4,7 @@ using UnityEngine;
 
 public class cameramenu : MonoBehaviour
 {
-    public Transform objetivo;
-
-
-    void Start()
-    {
-        
-    }
-
+    [SerializeField] private Transform objetivo;
     
     void Update()
     {
