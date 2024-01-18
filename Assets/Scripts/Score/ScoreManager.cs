@@ -27,7 +27,7 @@ public class ScoreManager : MonoBehaviour
     int highscoreRhythm = 0;
 
     int scoreApagon = 0;
-    //int highscoreApagon = 0;
+    int highscoreApagon = 0;
 
     int scoreTruck = 0;
     int highscoreTruck = 0;
@@ -36,7 +36,7 @@ public class ScoreManager : MonoBehaviour
     int highscoreTrash = 0;
 
     int scoreFeed = 0;
-    //int highscoreFeed = 0;
+    int highscoreFeed = 0;
 
     float contadorApagon = 15f;
     int comboTruck = 0;
@@ -52,9 +52,11 @@ public class ScoreManager : MonoBehaviour
         scoreTextRhythm.text = "Puntos: " + scoreRhythm.ToString();
         highscoreTextRhythm.text = "High Score: " + highscoreRhythm.ToString();
 
+        highscoreApagon = PlayerPrefs.GetInt("highscoreApagon", 0);
         scoreTextApagon.text = "Puntos: " + scoreApagon.ToString();
+        highscoreTextApagon.text = "High Score:" + highscoreApagon.ToString();
 
-        highscoreTruck = PlayerPrefs.GetInt("highscoreTruck");
+        highscoreTruck = PlayerPrefs.GetInt("highscoreTruck", 0);
         scoreTextTruck.text = "Puntos: " + scoreTruck.ToString();
         highscoreTextTruck.text = "High Score: " + highscoreTruck.ToString();
 
@@ -62,7 +64,9 @@ public class ScoreManager : MonoBehaviour
         scoreTextTrash.text = "Puntos: " + scoreTrash.ToString();
         highscoreTextTrash.text = "High Score: " + highscoreTrash.ToString();
 
+        highscoreFeed = PlayerPrefs.GetInt("highscoreFeed", 0);
         scoreTextFeed.text = "Puntos: " + scoreFeed.ToString();
+        highscoreTextFeed.text = "High Score: " + highscoreFeed.ToString();
 
     }
 
@@ -114,6 +118,12 @@ public class ScoreManager : MonoBehaviour
             scoreApagon = 50;
             scoreTextApagon.text = "Puntos: " + scoreApagon.ToString();
         }
+
+        if (highscoreApagon < scoreApagon)
+        {
+            PlayerPrefs.SetInt("highscoreApagon", scoreApagon);
+        }
+
     }
 
     public void RemovePointTrash()
@@ -154,6 +164,11 @@ public class ScoreManager : MonoBehaviour
     {
         scoreFeed += 5;
         scoreTextFeed.text = "Puntos: " + scoreFeed.ToString();
+
+        if(highscoreFeed < scoreFeed)
+        {
+            PlayerPrefs.SetInt("highscoreFeed", scoreFeed);
+        }
     }
 
     public void AddPointTruck()
