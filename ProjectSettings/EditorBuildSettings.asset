@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Interfaz/Start Game.unity
+    guid: a03b40172020e0649b1275265e205b51
+  - enabled: 1
     path: Assets/Scenes/Interfaz/Menu principal.unity
     guid: f599197ea2657304cb7b2e6b883c362e
   - enabled: 1
@@ -15,34 +18,34 @@ EditorBuildSettings:
     path: Assets/Scenes/Interfaz/Menu historia.unity
     guid: 70b9b5e6a9db9394b802b78af7fce0e6
   - enabled: 1
-    path: "Assets/Scenes/minijuegos/Minijuego Apag\xF3n.unity"
+    path: "Assets/Scenes/Minijuegos/Minijuego Apag\xF3n.unity"
     guid: 7770965fae80f714aa80d42390562b07
   - enabled: 1
-    path: Assets/Scenes/minijuegos/Feed fish.unity
+    path: Assets/Scenes/Minijuegos/Feed fish.unity
     guid: 001199feecee5e5469fe0fdcf804db16
   - enabled: 1
-    path: Assets/Scenes/minijuegos/Minijuego Ritmo.unity
+    path: Assets/Scenes/Minijuegos/Minijuego Ritmo.unity
     guid: 50a56057306f90646a856ab65a6b9d87
   - enabled: 1
-    path: Assets/Scenes/minijuegos/Minijuego trash.unity
+    path: Assets/Scenes/Minijuegos/Minijuego trash.unity
     guid: 98b2e274e7328504e9933daf67ba32ef
   - enabled: 1
-    path: Assets/Scenes/minijuegos/Truck.unity
+    path: Assets/Scenes/Minijuegos/Truck.unity
     guid: a6305708aaa9bac4a83d3ef625e71a0c
   - enabled: 1
-    path: "Assets/Scenes/minijuegos/Carga Apag\xF3n.unity"
+    path: "Assets/Scenes/Minijuegos/Carga Apag\xF3n.unity"
     guid: abe55d827c6c06d42a937940fdbcdc5d
   - enabled: 1
-    path: Assets/Scenes/minijuegos/Carga Feed fish.unity
+    path: Assets/Scenes/Minijuegos/Carga Feed fish.unity
     guid: 32dcfc81d60cec94d9b8dfa98cd015c5
   - enabled: 1
-    path: Assets/Scenes/minijuegos/Carga Ritmo.unity
+    path: Assets/Scenes/Minijuegos/Carga Ritmo.unity
     guid: 14e8e37979bb05b4dbf374b929e4a36b
   - enabled: 1
-    path: Assets/Scenes/minijuegos/Carga Trash.unity
+    path: Assets/Scenes/Minijuegos/Carga Trash.unity
     guid: af183eafe93b4d74e8f7917e580df82e
   - enabled: 1
-    path: Assets/Scenes/minijuegos/Carga Truck.unity
+    path: Assets/Scenes/Minijuegos/Carga Truck.unity
     guid: e2ea3faccc5ec7547950398078fb672e
   - enabled: 1
     path: Assets/Scenes/Modo historia/Feed fish (Historia).unity
