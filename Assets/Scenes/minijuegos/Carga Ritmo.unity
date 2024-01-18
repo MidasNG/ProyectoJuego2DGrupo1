@@ -510,7 +510,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Dale al coraz\xF3n al ritmo de la m\xFAsica."
+  m_text: Presiona los corazones al ritmo de la musica.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
   m_sharedMaterial: {fileID: 5590187449773088812, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1343,7 +1343,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pulsar corazon rojo = espacio
+  m_text: Corazones rojos = espacio
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
   m_sharedMaterial: {fileID: 5590187449773088812, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
@@ -1376,7 +1376,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1477,7 +1477,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pulsar corazon verde = a
+  m_text: Corazones verdes = a
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
   m_sharedMaterial: {fileID: 5590187449773088812, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
@@ -1510,7 +1510,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535

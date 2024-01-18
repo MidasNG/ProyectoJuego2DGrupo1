@@ -308,7 +308,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Parar camion = izquierda / derecha
+  m_text: Parar camiones = izquierda / derecha
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
   m_sharedMaterial: {fileID: 5590187449773088812, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
@@ -341,7 +341,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -371,7 +371,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -3.5433044, w: 0}
+  m_margin: {x: -10.9579315, y: 0, z: -9.022308, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -962,7 +962,7 @@ Transform:
   m_GameObject: {fileID: 1032118489}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.89, y: -1.93, z: 0}
+  m_LocalPosition: {x: 5.26, y: -1.93, z: 0}
   m_LocalScale: {x: 1.5779885, y: 1.5779885, z: 1.5779885}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1321,7 +1321,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -959.72, y: -1083.1887}
+  m_AnchoredPosition: {x: -958.47, y: -1083.1887}
   m_SizeDelta: {x: 359.0842, y: 84.35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1581893472
@@ -1344,7 +1344,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Evita que los camiones contaminentes entren y deja pasar los ecol\xF3gicos."
+  m_text: Evita que los camiones contaminantes     entren y deja pasar a los que
+    no lo son.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
   m_sharedMaterial: {fileID: 5590187449773088812, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
@@ -1377,7 +1378,7 @@ MonoBehaviour:
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
@@ -1407,7 +1408,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -32.62558, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1591,7 +1592,7 @@ Transform:
   m_GameObject: {fileID: 2036262821}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.69, y: -2.87, z: 0}
+  m_LocalPosition: {x: 6.52, y: -2.67, z: 0}
   m_LocalScale: {x: 2.2202, y: 2.2202, z: 2.2202}
   m_ConstrainProportionsScale: 0
   m_Children: []
