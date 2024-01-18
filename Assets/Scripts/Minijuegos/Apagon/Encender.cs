@@ -24,6 +24,7 @@ public class Encender : MonoBehaviour
     public GameObject lvl3;
     public GameObject lvl2;
     public GameObject lvl4;
+    public Playercontroller scriptplayer;
 
     // Start is called before the first frame update
     void Start()
@@ -93,6 +94,8 @@ public class Encender : MonoBehaviour
             Destroy(box);
 
             StartCoroutine(cambiolvl());
+
+         
 
         }
        
