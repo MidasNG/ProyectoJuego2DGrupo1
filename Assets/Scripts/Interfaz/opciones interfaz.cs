@@ -6,8 +6,6 @@ using UnityEngine.SceneManagement;
 public class opcionesinterfaz : MonoBehaviour
 {
 
-    public int nivelrandom;
-
     public void volver()
     {
         SceneManager.LoadScene("Menu principal");
@@ -16,27 +14,27 @@ public class opcionesinterfaz : MonoBehaviour
 
     public void minijuego1()
     {
-        SceneManager.LoadScene("Carga Apagón");
+        StartCoroutine(minijuegoApagon());
     }
 
     public void minijuego2()
     {
-        SceneManager.LoadScene("Carga Ritmo");
+        StartCoroutine(minijuegoRitmo());
     }
 
     public void minijuego3()
     {
-        SceneManager.LoadScene("Carga Feed fish");
+        StartCoroutine(minijuegoFeed());
     }
 
     public void minijuego4()
     {
-        SceneManager.LoadScene("Carga trash");
+        StartCoroutine(minijuegoTrash());
     }
 
     public void minijuego5()
     {
-        SceneManager.LoadScene("Carga Truck");
+        StartCoroutine(minijuegoTruck());
     }
 
     public void pantallaMinijuegos()
@@ -44,9 +42,35 @@ public class opcionesinterfaz : MonoBehaviour
         SceneManager.LoadScene("Menu minijuegos");
     }
 
-    public void minijuegorandom()
+
+    IEnumerator minijuegoApagon()
     {
-        nivelrandom = Random.Range(8, 13);
-        SceneManager.LoadScene(nivelrandom);
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Carga Apagón");
+    }
+
+    IEnumerator minijuegoRitmo()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Carga Ritmo");
+    }
+
+    IEnumerator minijuegoFeed()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Carga Feed fish");
+    }
+
+    IEnumerator minijuegoTruck()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Carga Truck");
+    }
+
+
+    IEnumerator minijuegoTrash()
+    {
+        yield return new WaitForSeconds(0.5f);
+        SceneManager.LoadScene("Carga trash");
     }
 }
