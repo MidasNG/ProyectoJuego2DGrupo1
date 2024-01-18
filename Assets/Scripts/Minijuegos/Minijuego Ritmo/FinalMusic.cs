@@ -16,7 +16,7 @@ public class FinalMusic : MonoBehaviour
         finalMusic = GetComponent<AudioSource>();
         finalMusic.Pause();
 
-        yield return new WaitForSeconds(20f);
+        yield return new WaitForSeconds(23f);
 
         finalMusic.Play();
 

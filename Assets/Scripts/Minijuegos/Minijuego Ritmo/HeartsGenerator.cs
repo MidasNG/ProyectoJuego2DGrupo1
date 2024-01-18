@@ -11,18 +11,22 @@ public class HeartsGenerator : MonoBehaviour
     private float tiempoEntreCorazones;
     private float comienzoDeTiempo;
     private bool stop = false;
+    private bool activado = false;
+
 
     IEnumerator Start()
     {
-            Time.timeScale = 0f;
+            activado = false;
 
             yield return new WaitForSecondsRealtime(3f);
 
+            activado = true;
             stop = false;
 
             yield return new WaitForSeconds(19f);
 
             stop = true;
+            activado = false;
     }
 
     void Update()
@@ -32,7 +36,8 @@ public class HeartsGenerator : MonoBehaviour
         {
             if (stop == false)
             {
-                if (tiempoEntreCorazones <= 0)
+           
+                if (tiempoEntreCorazones <= 0 && activado == true)
                 {
                     int n = Random.Range(0, 2);
                     GameObject heart = Instantiate(arrayPrefabHearts[n], transform.position, Quaternion.identity);
