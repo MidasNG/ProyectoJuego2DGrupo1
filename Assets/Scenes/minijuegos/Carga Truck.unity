@@ -504,7 +504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c4a2331779c4f44ba975eb53d588ce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nivelrandom: 0
 --- !u!1 &468140662
 GameObject:
   m_ObjectHideFlags: 0
@@ -1705,6 +1704,10 @@ PrefabInstance:
     - target: {fileID: 6496410304593924531, guid: 4c54d6c27b61e34458c2d6ec8de25d80, type: 3}
       propertyPath: m_Name
       value: SaltarCarga
+      objectReference: {fileID: 0}
+    - target: {fileID: 6636620548782135274, guid: 4c54d6c27b61e34458c2d6ec8de25d80, type: 3}
+      propertyPath: sceneName
+      value: Truck
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
