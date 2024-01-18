@@ -8,11 +8,13 @@ public class TimerApagón : MonoBehaviour
 {
     public float timer = 15;
     private TextMeshProUGUI textoTimer;
+    private AudioSource loser;
 
 
     void Start()
     {
         textoTimer = GetComponent<TextMeshProUGUI>();
+        loser = GetComponent<AudioSource>();
     }
 
 
@@ -26,10 +28,20 @@ public class TimerApagón : MonoBehaviour
         }
         else if (timer < 1)
         {
-            SceneManager.LoadSceneAsync("Menu minijuegos");
-
+            StartCoroutine(gameover());
+           
         }
 
-       
+    }
+
+    public IEnumerator gameover()
+    {
+        loser.Play();
+
+        yield return new WaitForSeconds(3f);
+
+        SceneManager.LoadSceneAsync("Menu minijuegos");
+
     }
 }
+
