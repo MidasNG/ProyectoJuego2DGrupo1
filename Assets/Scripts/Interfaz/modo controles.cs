@@ -36,11 +36,12 @@ public class modocontroles : MonoBehaviour
 
         if(Input.GetButtonDown("Cancel") && colider == true)
         {
-            controles.SetActive(false);
-            Time.timeScale = 1;
-            colider = true;
-            cartel.SetActive(true);
-            aviso.SetActive(true);
+            //controles.SetActive(false);
+            //Time.timeScale = 1;
+            //colider = true;
+            //cartel.SetActive(true);
+            //aviso.SetActive(true);
+            regresar();
         }
 
     }
@@ -52,7 +53,6 @@ public class modocontroles : MonoBehaviour
         colider = true;
         cartel.SetActive(true);
         aviso.SetActive(true);
-        Time.timeScale = 1;
     }
 
     public void modoteclado()
