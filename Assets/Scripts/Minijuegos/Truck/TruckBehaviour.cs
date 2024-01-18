@@ -8,11 +8,11 @@ public class TruckBehaviour : MonoBehaviour
 {
     [SerializeField] private AnimationCurve movementCurve, vanishCurve;
     [SerializeField] private TruckGameController game;
+    [SerializeField] private bool badTruck;
     private SpriteRenderer spriteRenderer;
-    private float pointA = 0, t, vanishT = 0, pointB = 10, speed = 4;
-    private bool approveable = false;
     private Notification miss, correct, incorrect;
-    private bool vanish = false;
+    private bool approveable = false, vanish = false;
+    private float pointA = 0, t, vanishT = 0, pointB = 10, speed = 4;
 
     private void Start()
     {
@@ -69,7 +69,7 @@ public class TruckBehaviour : MonoBehaviour
         vanish = true;
         StopCoroutine(MovePointA());
         StopCoroutine(MovePointB());
-        if (spriteRenderer.color.g == 1 && !Mathf.Approximately(transform.position.y, pointB))
+        if (!badTruck && !Mathf.Approximately(transform.position.y, pointB))
         {
             ScoreManager.instance.RemovePointTruck();
             incorrect.TriggerNotif();
@@ -91,7 +91,7 @@ public class TruckBehaviour : MonoBehaviour
 
     private void VanishMiss()
     {
-        if (spriteRenderer != null && spriteRenderer.color.r == 1)
+        if (badTruck)
         {
             if (game != null)
             {

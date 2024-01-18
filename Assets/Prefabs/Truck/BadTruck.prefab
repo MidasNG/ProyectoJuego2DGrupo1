@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5014633876170628437}
   - component: {fileID: 7536465297366707395}
   m_Layer: 0
-  m_Name: Truck
+  m_Name: BadTruck
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -74,12 +74,12 @@ SpriteRenderer:
   m_SortingLayerID: -220251463
   m_SortingLayer: -1
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 35f80294cacf1eb4586bf561771ecd5e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: d15da2c473cb4c548b88184e12fccc3e, type: 3}
+  m_Color: {r: 1, g: 0.4660377, b: 0.4660377, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.32, y: 1.09}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -146,3 +146,4 @@ MonoBehaviour:
     m_PostInfinity: 2
     m_RotationOrder: 4
   game: {fileID: 0}
+  badTruck: 1
