@@ -10,6 +10,10 @@ TagManager:
   - background
   - Final
   - RhythmHeartGreen
+  - Comida
+  - Pez
+  - Puntuacion
+  - AudioController
   layers:
   - Default
   - TransparentFX

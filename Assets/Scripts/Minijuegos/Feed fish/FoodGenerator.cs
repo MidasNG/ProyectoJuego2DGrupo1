@@ -6,8 +6,18 @@ public class FoodGenerator : MonoBehaviour
     public GameObject comidaPrefab; // Prefab de la comida
     public float tiempoEsperaEntreGeneraciones = 2.0f; // Tiempo de espera entre generaciones
     public float tiempoVidaComida = 5.0f; // Tiempo de vida de la comida
+    public AudioSource audioSource; // Referencia al componente AudioSource
 
     private bool puedeGenerar = true;
+
+    void Start()
+    {
+        // Asegúrate de asignar el componente AudioSource desde el Inspector
+        if (audioSource == null)
+        {
+            Debug.LogError("El componente AudioSource no está asignado en el Inspector.");
+        }
+    }
 
     void Update()
     {
@@ -15,6 +25,7 @@ public class FoodGenerator : MonoBehaviour
         if (puedeGenerar && Input.GetKeyDown(KeyCode.Space))
         {
             GenerarComida();
+            ReproducirSonido();
             StartCoroutine(EsperarParaGenerar());
         }
     }
@@ -24,6 +35,15 @@ public class FoodGenerator : MonoBehaviour
         // Generar la comida en la posición del generador (este empty object)
         GameObject nuevaComida = Instantiate(comidaPrefab, transform.position, Quaternion.identity);
         Destroy(nuevaComida, tiempoVidaComida); // Destruir la comida después de tiempoVidaComida segundos
+    }
+
+    void ReproducirSonido()
+    {
+        if (audioSource != null)
+        {
+            // Reproducir el sonido
+            audioSource.Play();
+        }
     }
 
     IEnumerator EsperarParaGenerar()
