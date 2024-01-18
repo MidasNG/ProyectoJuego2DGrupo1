@@ -14,9 +14,13 @@ public class HeartsGenerator : MonoBehaviour
 
     IEnumerator Start()
     {
+            Time.timeScale = 0f;
+
+            yield return new WaitForSecondsRealtime(3f);
+
             stop = false;
 
-            yield return new WaitForSeconds(18.5f);
+            yield return new WaitForSeconds(20f);
 
             stop = true;
     }
