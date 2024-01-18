@@ -54,7 +54,7 @@ public class ScoreManager : MonoBehaviour
 
         highscoreApagon = PlayerPrefs.GetInt("highscoreApagon", 0);
         scoreTextApagon.text = "Puntos: " + scoreApagon.ToString();
-        highscoreTextApagon.text = "High Score:" + highscoreApagon.ToString();
+        highscoreTextApagon.text = "High Score: " + highscoreApagon.ToString();
 
         highscoreTruck = PlayerPrefs.GetInt("highscoreTruck", 0);
         scoreTextTruck.text = "Puntos: " + scoreTruck.ToString();
