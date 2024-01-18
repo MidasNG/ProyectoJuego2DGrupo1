@@ -18,6 +18,7 @@ public class Basuras : MonoBehaviour
         clip = GetComponent<AudioSource>();
         render = GetComponent<SpriteRenderer>();
         colisionador = GetComponent<CircleCollider2D>();
+        score = 0;
     }
 
     private void Update()
