@@ -353,7 +353,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &346607143
 AudioListener:
   m_ObjectHideFlags: 0
@@ -444,7 +444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &354813438
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -743,7 +743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &552856915
 Transform:
   m_ObjectHideFlags: 0
@@ -781,7 +781,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &572091832
 Transform:
   m_ObjectHideFlags: 0
@@ -3536,7 +3536,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &868227059
 Transform:
   m_ObjectHideFlags: 0
@@ -3648,6 +3648,10 @@ PrefabInstance:
     - target: {fileID: 3947915027137930887, guid: d240f44f38c08e94998b174c2801f324, type: 3}
       propertyPath: m_Name
       value: Pausa
+      objectReference: {fileID: 0}
+    - target: {fileID: 3947915027137930887, guid: d240f44f38c08e94998b174c2801f324, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6226916792062110377, guid: d240f44f38c08e94998b174c2801f324, type: 3}
       propertyPath: m_Pivot.x
@@ -4882,7 +4886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1264702963
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5218,7 +5222,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1761252541
 Animator:
   serializedVersion: 5
@@ -5557,7 +5561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2076960324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5791,6 +5795,10 @@ PrefabInstance:
     - target: {fileID: 3828369735294612591, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
       propertyPath: m_Name
       value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3828369735294612591, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5115465585184856390, guid: c40dfa3748765b44fb2e93fd0a9ec5c7, type: 3}
       propertyPath: xnegativo

@@ -47,19 +47,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Minijuegos/Carga Truck.unity
     guid: e2ea3faccc5ec7547950398078fb672e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Modo historia/Feed fish (Historia).unity
     guid: abd50a84d3c840a4c9bda9bacacac314
-  - enabled: 1
+  - enabled: 0
     path: "Assets/Scenes/Modo historia/Minijuego Apag\xF3n (Historia).unity"
     guid: fb99bd2aebc97ec4f809ee70f2aff05b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Modo historia/Minijuego Ritmo (Historia).unity
     guid: 4a12fa1df36c1304fbb859eb941829ed
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Modo historia/Minijuego trash (Historia).unity
     guid: 21c47ec70bff8e64da03c27ac16dae5c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Modo historia/Truck (Historia).unity
     guid: 3d7746efd2d70004dba452eed5054e79
   - enabled: 1
