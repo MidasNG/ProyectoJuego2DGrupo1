@@ -286,7 +286,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: -962.41, y: -1078.75}
-  m_SizeDelta: {x: 306.54, y: 43.61}
+  m_SizeDelta: {x: 329.7, y: 43.61}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &246550497
 MonoBehaviour:
@@ -308,10 +308,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Parar cami\xF3n = izquierda / derecha"
+  m_text: Parar camion = izquierda / derecha
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
+  m_sharedMaterial: {fileID: 5590187449773088812, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -335,8 +335,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 15
-  m_fontSizeBase: 15
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -582,8 +582,8 @@ Transform:
   m_GameObject: {fileID: 468140662}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.5859, y: 1.5809, z: 0}
-  m_LocalScale: {x: 9.945607, y: 1.2158574, z: 1}
+  m_LocalPosition: {x: -2.44, y: 1.5809, z: 0}
+  m_LocalScale: {x: 10.940168, y: 1.2158574, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -879,7 +879,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.102544546, y: -2.58, z: 0}
-  m_LocalScale: {x: 13.471099, y: 3.4202037, z: 1}
+  m_LocalScale: {x: 15.491763, y: 3.4202037, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -962,7 +962,7 @@ Transform:
   m_GameObject: {fileID: 1032118489}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.93, y: -1.94, z: 0}
+  m_LocalPosition: {x: 6.89, y: -1.93, z: 0}
   m_LocalScale: {x: 1.5779885, y: 1.5779885, z: 1.5779885}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1070,7 +1070,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -961.98, y: -1075.99}
+  m_AnchoredPosition: {x: -962.3, y: -1076.06}
   m_SizeDelta: {x: 267.46, y: 54.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1279863031
@@ -1095,8 +1095,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Truck
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
+  m_sharedMaterial: {fileID: 5590187449773088812, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1120,8 +1120,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 35.97
+  m_fontSizeBase: 35.97
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1346,8 +1346,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Evita que los camiones contaminentes entren y deja pasar los ecol\xF3gicos."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
+  m_sharedMaterial: {fileID: 5590187449773088812, guid: 18d5902327a09304b9518e27521ece1c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1371,8 +1371,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16.5
-  m_fontSizeBase: 16.5
+  m_fontSize: 19
+  m_fontSizeBase: 19
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1591,7 +1591,7 @@ Transform:
   m_GameObject: {fileID: 2036262821}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.86, y: -2.78, z: 0}
+  m_LocalPosition: {x: 6.69, y: -2.87, z: 0}
   m_LocalScale: {x: 2.2202, y: 2.2202, z: 2.2202}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1683,7 +1683,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3614315905763522704, guid: 4c54d6c27b61e34458c2d6ec8de25d80, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -1919.99
+      value: -1919.44
       objectReference: {fileID: 0}
     - target: {fileID: 3614315905763522704, guid: 4c54d6c27b61e34458c2d6ec8de25d80, type: 3}
       propertyPath: m_AnchoredPosition.y
