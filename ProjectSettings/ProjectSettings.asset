@@ -16,7 +16,7 @@ PlayerSettings:
   productName: ODS Party
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_SplashScreenBackgroundColor: {r: 0.9254902, g: 0.7930284, b: 0.14509803, a: 1}
+  m_SplashScreenBackgroundColor: {r: 1, g: 0.57254905, b: 0, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
   m_SplashScreenOverlayOpacity: 1
